@@ -1,0 +1,32 @@
+.hero_banner {
+    background-image: url('../../assets/Home/bckd_image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding-top: 20px;
+    scale: crop;
+}
+
+.banner_content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 55%;
+    padding-top: 6%;
+    padding-left: 10%;
+}
+
+.hero_container {
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    bottom: -85px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}

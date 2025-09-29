@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap');
+
+
+.pt {
+    font-family: "PT Sans", sans-serif;
+}
+
+.nnt {
+    font-family: "Nunito", sans-serif;
+}
+
+
+.container{
+    width: 90%;
+    margin: auto;
+}
