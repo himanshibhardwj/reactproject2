@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar1 = () => {
   return (
-    <div className='border-b'>
+    <div className='border-b relative'>
       <div className=' flex justify-between items-center text-[#56778F] font-bold container '>
         <div className='flex items-center gap-30'>
           <div className='flex items-center gap-3'>
@@ -25,9 +25,6 @@ const Navbar1 = () => {
           </div>
         </div>
         <div className='flex items-center gap-8'>
-          <div>
-            <LanguageDropdown size={16} />
-          </div>
           <div className='flex items-center gap-2 py-3'>
             <span className='icon_clr1'>
               <FaRegUser size={16} />

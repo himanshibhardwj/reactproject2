@@ -9,12 +9,14 @@ function App() {
 
   return (
     <BrowserRouter>
-    <Navbar/>
+      <Navbar />
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/loginsignup' element={<LoginSignup/>}/>
+        <Route path='/' element={<Home />} />
+        <Route path='/loginsignup' element={<LoginSignup />} />
       </Routes>
-      {/* <Footer/> */}
+      <div className='mt-10'>
+      <Footer />
+      </div>
     </BrowserRouter>
   )
 }

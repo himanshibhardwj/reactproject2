@@ -32,7 +32,7 @@ const Navbar3 = () => {
   ]
   return (
     <div className='p-3 bg-[#0071BC33]'>
-      <div className='container flex gap-8 px-5'>
+      <div className='container nav_items flex gap-8 px-5'>
         {nav_itm.map((item, index) => {
           return (
             <div key={index}>

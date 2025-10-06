@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+.poppins {
+    font-family: "Poppins", sans-serif;
+}
+
+.prompt {
+    font-family: "Prompt", sans-serif;
+}
 
 .pt {
     font-family: "PT Sans", sans-serif;
@@ -10,8 +20,365 @@
     font-family: "Nunito", sans-serif;
 }
 
+@font-face {
+    font-family: gs;
+    src: url(/src/fonts/generalsans/GeneralSans-Regular.otf);
+}
 
-.container{
+.gs {
+    font-family: gs;
+}
+
+.container {
     width: 90%;
     margin: auto;
+}
+
+
+
+.vitamins_banner {
+    background-image: url(./assets/Home/Banner/Cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    background-position: center;
+}
+
+@media (max-width:1536px) {
+    .all_cat_btn {
+        width: 120px;
+        font-size: 13px;
+    }
+
+    .nav_items span {
+        font-size: 13px;
+    }
+
+    .banner_content h3 {
+        font-size: 35px;
+    }
+
+    .banner_content p {
+        font-size: 16px;
+    }
+
+    .home_box_1 h3 {
+        font-size: 20px;
+    }
+
+    .home_box_1 p {
+        font-size: 16px;
+    }
+    .featured_all_content{
+        width: 180px;
+    }
+    .trending_now_content{
+        width: 180px;
+    }
+    .skin_care_content{
+        width: 180px;
+    }
+    .explore_something_new_content{
+        width: 180px;
+    }
+    .spotlight_content{
+        width: 180px;
+    }
+    .super_saving_content{
+        width: 180px;
+    }
+    .immunity_supplement_content{
+        width: 180px;
+    }
+}
+
+@media (max-width: 1495px){
+    .supplement_content h2{
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1390px) {
+
+    .search_input_box,
+    .search_input_box input {
+        width: 700px;
+    }
+
+    .vitamin_banner_left h2 {
+        font-size: 40px;
+    }
+
+    .banner_content h3 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1200px){
+    .three_banner1 h1{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1280px) {
+
+    .search_input_box,
+    .search_input_box input {
+        width: 600px;
+    }
+
+    .featured_all_content{
+        width: 150px;
+    }
+
+    .featured_all_content h1{
+        font-size: 12px;
+    }
+    .featured_all_content p{
+        font-size: 10px;
+    }
+    .featured_all_content img{
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    .stars{
+        gap: 4px;
+        justify-content: center;
+    }
+    .stars ul{
+        gap: 2px;
+        font-size: 10px;
+    }
+
+    .health_cncern h1{
+        font-size: 16px;
+    }
+    
+    .heading_text {
+        font-size: 25px;
+    }
+
+    .trending_now_content h1{
+        font-size: 13px;
+    }
+    .trending_now_content p{
+        font-size: 12px;
+    }
+
+    .trending_now_content img{
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    .trending_now_content{
+        width: 140px;
+    }
+
+    .skin_care_content{
+        width: 140px;
+    }
+    .skin_care_content h1{
+        font-size: 13px;
+    }
+
+    .skin_care_content p{
+        font-size: 12px;
+    }
+    .explore_something_new_content{
+        width: 150px;
+    }
+    .explore_something_new_content h1{
+        font-size: 13px;
+    }
+
+    .explore_something_new_content p{
+        font-size: 12px;
+    }
+
+    .explore_something_new_content img{
+        max-width: 120px;
+        max-height: 120px;
+    }
+    .spotlight_content{
+        width: 150px;
+    }
+
+    .spotlight_content h1{
+        font-size: 13px;
+    }
+    .spotlight_content p{
+        font-size: 12px;
+    }
+
+    .spotlight_content img{
+        max-width: 120px;
+        max-height: 120px;
+    }
+    .super_saving_content{
+        width: 140px;
+    }
+
+    .super_saving_content h1{
+        font-size: 13px;
+    }
+    .super_saving_content p{
+        font-size: 12px;
+    }
+
+    .super_saving_content img{
+        max-width: 120px;
+        max-height: 120px;
+    }
+    .immunity_supplement_content{
+        width: 140px;
+    }
+    .immunity_supplement_content h1{
+        font-size: 13x;
+    }
+    
+    .immunity_supplement_content p{
+        font-size: 12px;
+    }
+    .immunity_supplement_content img{
+        max-width: 120px;
+        max-height: 120px;
+    }
+    .discount{
+        width: 32px;
+        top:5px;
+        left:10px;
+        font-size: 8px;
+    }
+
+
+}
+
+
+@media (max-width: 1168px) {
+    .banner_content h3 {
+        font-size: 28px;
+    }
+
+    .three_banner1 h2 {
+        font-size: 30px;
+    }
+
+    .three_banner1 h1 {
+        font-size: 20px;
+    }
+
+    .box {
+        bottom: -100px !important;
+    }
+}
+
+@media (max-width: 1024px){
+    .featured_all_content{
+        width: 165px;
+    }
+    .trending_now_content{
+        width: 165px;
+    }
+    .skin_care_content{
+        width: 165px;
+    }
+    .explore_something_new_content{
+        width: 165px;
+    }
+    .spotlight_content{
+        width: 165px;
+    }
+    .super_saving_content{
+        width: 165px;
+    }
+    .immunity_supplement_content{
+        width: 165px;
+    }
+}
+
+
+@media (max-width: 1086px) {
+    .banner_content h3 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1055px) {
+    .footer_email {
+        display: none;
+    }
+    .search_input_box,
+    .search_input_box input {
+        width: 500px;
+    }
+    .supplement_content h3{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1024px){
+    .nav_items span{
+        font-size: 12px;
+    }
+    .nav_items{
+        gap: 6px;
+        padding: 0px;
+    }
+    .banner_content h3{
+        font-size: 25px;
+    }
+    .vitamin_banner_left h2{
+        font-size: 25px;
+    }
+    .three_banner1{
+        flex-direction: column;
+    }
+    .banner_content h3 {
+        font-size: 20px;
+    }
+    .three_banner1 h2{
+        font-size: 20px;
+    }
+    .search_input_box,
+    .search_input_box input {
+        width: 400px;
+    }
+}
+
+@media (max-width: 900px){
+    .search_input_box,
+    .search_input_box input {
+        width: 300px;
+    }
+}
+
+@media (max-width:892px){
+    .banner_content h3 {
+        font-size: 16px;
+    }
+    .banner_content p {
+        font-size: 13px;
+    }
+    .home_box_1 h3{
+        font-size: 16px;
+    }
+    .home_box_1 p{
+        font-size: 12px;
+    }
+    .cart_section{
+        width: 100px;
+    }
+}
+
+
+@media (max-width:800px){
+    .cart_section{
+        width: 100px;
+    }
+}
+
+.swiper-slide{
+    padding-right: 0px!important;
 }
