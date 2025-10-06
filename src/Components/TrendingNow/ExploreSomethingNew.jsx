@@ -52,14 +52,14 @@ const ExploreSomethingNew = () => {
                         {displayedItems.map((item, index) => {
                             return (
                                 <SwiperSlide className='p-1'>
-                                    <div key={index} className='w-[250px] h-[500px] group shadow-md bg-white flex flex-col items-center gap-5 relative drop-shadow rounded-2xl pt-10 explore_something_new_content'>
+                                    <div key={index} className='w-[210px] h-[440px] group shadow-md bg-white flex flex-col items-center gap-5 relative drop-shadow rounded-2xl pt-10 explore_something_new_content'>
                                         <div className=' w-[full] h-[full] max-w-[185px] max-h-[130px] flex items-center justify-center explore_something_new'>
                                             <img src={item.image} className='w-full h-full object-contain'/>
                                         </div>
                                         <div className='w-full h-[250px] flex flex-col items-center gap-2 p-3'>
                                             <h1 className='text-base font-bold text-center'>{item.name}</h1>
                                             <p className='font-medium text-[#666666] flex items-center gap-1'>{item.deliver_time}<span className='text-[15px] text-[#000000] font-bold'>{item.time}</span></p>
-                                            <div className='flex items-center gap-5 stars'>
+                                            <div className='flex items-center gap-5 '>
                                                 <ul className='flex items-center gap-2 text-[#FEB92D]'>
                                                     <li><FaStar size={15} /></li>
                                                     <li><FaStar size={15} /></li>

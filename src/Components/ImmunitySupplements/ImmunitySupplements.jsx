@@ -50,8 +50,8 @@ const ImmunitySupplements = () => {
                         {displayedItems.map((item, index) => {
                             return (
                                 <SwiperSlide className='p-1'>
-                                    <div key={index} className='w-[250px] h-[500px] group shadow-md bg-white flex flex-col items-center gap-5 relative drop-shadow rounded-2xl pt-10 immunity_supplement_content'>
-                                        <div className=' w-[full] h-[full] max-w-[152px] max-h-[250px] flex items-center justify-center immunity_supplement'>
+                                    <div key={index} className='w-[210px] h-[440px] group shadow-md bg-white flex flex-col items-center gap-5 relative drop-shadow rounded-2xl pt-10 immunity_supplement_content'>
+                                        <div className=' w-[full] h-[full] max-w-[152px] max-h-[400px] flex items-center justify-center immunity_supplement'>
                                             <img src={item.image} className='w-full h-full object-contain'/>
                                         </div>
                                         <div className='w-full h-[250px] flex flex-col items-center gap-2 p-3'>
