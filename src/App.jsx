@@ -18,14 +18,14 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/aboutus' element={<AboutUs />} />
+        {/* <Route path='/aboutus' element={<AboutUs />} />
         <Route path='/loginsignup' element={<LoginSignup />} />
         <Route path='/productview' element={<ProductView />} />
         <Route path='/productdetailspage' element={<ProductDetailsPage />} />
         <Route path='/contactus' element={<ContactUs />} />
         <Route path='/loginsignup' element={<LoginSignup />} />
         <Route path='/login' element={<LogIn />} />
-        <Route path='/mobileverification' element={<MobileVerification />} />
+        <Route path='/mobileverification' element={<MobileVerification />} /> */}
       </Routes>
       <div className='mt-10'>
       <Footer />

@@ -25,60 +25,55 @@ function ProductDetailSlider() {
     return (
 
         <div>
-        <div className='flex 2xl:flex-row xl:flex-row md:flex-row lg:flex-row flex-col justify-between public_sans product_details_slider_container'>
-            <div className='2xl:w-[50%] lg:w-[50%] md:w-[50%] xl:w-[50%] w-full'>
-                <Swiper
-                    spaceBetween={10}
-                    thumbs={{ swiper: smallSwiper }}
-                    modules={[FreeMode, Navigation, Thumbs]}
-                    className="mySwiper2 border-1"
-                >
-                    {sliceSlider.map(({ image }, index) => {
-                        return (<SwiperSlide key={index} className='product_details_slider'>
-                            <div className='p-5 product_details_image' style={{ height: '500px' }}>
-                                <img src={image} style={{ height: '100%' }} />
-                            </div>
-                        </SwiperSlide>)
-                    })}
-                </Swiper>
-                <Swiper
-                    onSwiper={setSmallSwiper}
-                    breakpoints={{
-                        640: {
-                            slidesPerView: 3,
-                        },
-                        768: {
-                            slidesPerView: 3,
-                        },
-                        1024: {
-                            slidesPerView: 4,
-                        },
+            <div className='flex 2xl:flex-row xl:flex-row md:flex-row lg:flex-row flex-col justify-between public_sans product_details_slider_container'>
+                <div className='2xl:w-[50%] lg:w-[50%] md:w-[50%] xl:w-[50%] w-full'>
+                    <Swiper
+                        spaceBetween={10}
+                        thumbs={{ swiper: smallSwiper }}
+                        modules={[FreeMode, Navigation, Thumbs]}
+                        className="mySwiper2 border-1"
+                    >
+                        {sliceSlider.map(({ image }, index) => {
+                            return (<SwiperSlide key={index} className='product_details_slider'>
+                                <div className='p-5 product_details_image' style={{ height: '500px' }}>
+                                    <img src={image} style={{ height: '100%' }} />
+                                </div>
+                            </SwiperSlide>)
+                        })}
+                    </Swiper>
+                    <Swiper
+                        onSwiper={setSmallSwiper}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 3,
+                            },
+                            768: {
+                                slidesPerView: 3,
+                            },
+                            1024: {
+                                slidesPerView: 4,
+                            },
 
-                        1400: {
-                            slidesPerView: 5,
-                        },
-                        1536: {
-                            slidesPerView: 5,
-                        }
-                    }}
-                    spaceBetween={10}
-                    slidesPerView={5}
-                    freeMode={true}
-                    watchSlidesProgress={true}
-                    modules={[FreeMode, Navigation, Thumbs]}
-                    navigation={true}
-                    className="mySwiper_1 mt-3"
-                >
-                    {sliceSlider.map(({ image }, index) => {
-                        return (<SwiperSlide className='border-1 w-[300px]' key={index}>
-                            <div className='flex items-center justify-center h-full'>
-                                <img src={image} />
-                            </div>
-                        </SwiperSlide>)
-                    })}
-
-                </Swiper>
-            </div>
+                            1400: {
+                                slidesPerView: 5,
+                            },
+                            1536: {
+                                slidesPerView: 5,
+                            }
+                        }}
+                        spaceBetween={10}
+                        slidesPerView={5}
+                        freeMode={true}
+                        watchSlidesProgress={true}
+                        modules={[FreeMode, Navigation, Thumbs]}
+                        navigation={true}
+                        className="mySwiper_1 mt-3"
+                    >
+                        <SwiperSlide className='border-1 w-[300px]' key={index}>
+                            
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
             </div>
         </div>
     );
