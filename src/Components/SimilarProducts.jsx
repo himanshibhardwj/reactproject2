@@ -21,38 +21,6 @@ const SimilarProducts = () => {
                     <div className='mb-5 flex items-center justify-between'><Header title={heading[0].title} />
                         <div><ViewAll /></div>
                     </div>
-                    <Swiper
-                        breakpoints={{
-                            640: {
-                                slidesPerView: 3,
-                                spaceBetween: 10,
-                            },
-                            768: {
-                                slidesPerView: 4,
-                                spaceBetween: 10,
-                            },
-                            1024: {
-                                slidesPerView: 6,
-                                spaceBetween: 10,
-                            },
-
-                            1400: {
-                                slidesPerView: 6,
-                                spaceBetween: 10,
-                            },
-                            1536: {
-                                slidesPerView: 6,
-                                spaceBetween: 10,
-                            }
-                        }}
-                        slidesPerView={6}
-                        spaceBetween={10}
-                        className="mySwiper"
-                    >
-                        <SwiperSlide className=' h-full' key={index} >
-
-                        </SwiperSlide>
-                    </Swiper>
                 </div>
             </div>
         </>

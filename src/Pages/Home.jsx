@@ -20,7 +20,7 @@ const Home = () => {
     <>
         <Hero/>
         <FeatureAll/>
-        <HealthConcern/>
+        {/* <HealthConcern/>
         <ImmunitySupplements/>
         <Vitamins_Supplements/>
         <TrendingNow/>
@@ -31,7 +31,7 @@ const Home = () => {
         <AyurvedaTopBrand/>
         <Spotlight/>
         <ThreeBannerContent/>
-        <SuperSavingDeals/>
+        <SuperSavingDeals/> */}
     </>
   )
 }

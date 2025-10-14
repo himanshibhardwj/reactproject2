@@ -18,56 +18,7 @@ const AyurvedaTopBrand = () => {
                     <div>
                         <Header title={heading[7].title} />
                     </div>
-                    <Swiper
-                        breakpoints={{
-                            250: {
-                                slidesPerView: 2,
-                                spaceBetween: 10,
-                            },
-                            380: {
-                                slidesPerView: 2,
-                                spaceBetween: 10,
-                            },
-                            480: {
-                                slidesPerView: 2,
-                                spaceBetween: 10,
-                            },
-                            578: {
-                                slidesPerView: 3,
-                                spaceBetween: 10,
-                            },
-                            640: {
-                                slidesPerView: 3,
-                                spaceBetween: 10,
-                            },
-                            768: {
-                                slidesPerView: 4,
-                                spaceBetween: 10,
-                            },
-                            1024: {
-                                slidesPerView: 6,
-                                spaceBetween: 10,
-                            },
-
-                            1400: {
-                                slidesPerView: 6,
-                                spaceBetween: 10,
-                            },
-                            1536: {
-                                slidesPerView: 6,
-                                spaceBetween: 10,
-                            }
-                        }}
-                        slidesPerView={6}
-                        spaceBetween={10}
-                        className="mySwiperone"
-                    >
-                        <div>
-                            <SwiperSlide key={index}>
-
-                            </SwiperSlide>
-                        </div>
-                    </Swiper>
+                   
                 </div>
             </div>
         </div>

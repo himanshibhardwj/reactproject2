@@ -1,8 +1,6 @@
 import React from 'react'
 
 import { featured_Products, heading } from '../../assets/data'
-import { FaShoppingBag, FaStar } from 'react-icons/fa'
-import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -11,7 +9,6 @@ import { Pagination } from 'swiper/modules';
 
 import Header from '../Header/Header';
 import ViewAll from '../Featured/ViewAll';
-import { Link } from 'react-router-dom';
 
 
 const Spotlight = () => {

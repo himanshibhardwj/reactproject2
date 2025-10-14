@@ -21,45 +21,7 @@ const ImmunitySupplements = () => {
                     <div className='mb-5 flex items-center justify-between'><Header title={heading[2].title} />
                         <div className='view_all'><ViewAll /></div>
                     </div>
-                    <Swiper
-                        breakpoints={{
-                            250: {
-                                slidesPerView: 2,
-                            },
-                            380: {
-                                slidesPerView: 2,
-                            },
-                            480: {
-                                slidesPerView: 2,
-                            },
-                            578: {
-                                slidesPerView: 3,
-                            },
-                            640: {
-                                slidesPerView: 3,
-                            },
-                            768: {
-                                slidesPerView: 4,
-                            },
-                            1024: {
-                                slidesPerView: 6,
-                            },
-
-                            1400: {
-                                slidesPerView: 6,
-                            },
-                            1536: {
-                                slidesPerView: 6,
-                            }
-                        }}
-                        slidesPerView={6}
-                        spaceBetween={10}
-                        className="mySwiper"
-                    >
-                                <SwiperSlide className=' h-full' key={index} >
-                                    
-                                </SwiperSlide>
-                    </Swiper>
+                   
                 </div>
             </div>
         </>
