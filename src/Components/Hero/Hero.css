@@ -4,7 +4,8 @@
     background-size: cover;
     height: 100%;
     padding-top: 20px;
-    scale: crop;
+    background-position: center;
+    
 }
 
 .banner_content {
@@ -14,15 +15,4 @@
     width: 55%;
     padding-top: 6%;
     padding-left: 10%;
-}
-
-.box{
-    width: 80%;
-    position: absolute;
-    left: 150px;
-    bottom: -100px;
-    background-color: white;
-    height: 30%;
-    padding: 10px;
-    border-radius: 20px;
 }

@@ -2,10 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+
+.inter {
+    font-family: "Inter", sans-serif;
+}
 
 .poppins {
     font-family: "Poppins", sans-serif;
+}
+
+.public_sans {
+    font-family: "Public Sans", sans-serif;
 }
 
 .prompt {
@@ -20,6 +30,11 @@
     font-family: "Nunito", sans-serif;
 }
 
+.ram_ji {
+    height: 50px;
+
+}
+
 @font-face {
     font-family: gs;
     src: url(/src/fonts/generalsans/GeneralSans-Regular.otf);
@@ -29,12 +44,10 @@
     font-family: gs;
 }
 
-.container {
-    width: 90%;
+.container_box {
+    width: 85%;
     margin: auto;
 }
-
-
 
 .vitamins_banner {
     background-image: url(./assets/Home/Banner/Cover.jpg);
@@ -44,341 +57,332 @@
     background-position: center;
 }
 
-@media (max-width:1536px) {
-    .all_cat_btn {
-        width: 120px;
+.swiper-slide {
+    padding-right: 0px !important;
+}
+
+.range_price input[type="range"] {
+    cursor: grab;
+    width: 100%;
+    height: 5px;
+}
+
+.range_price input[type="range"]::-webkit-slider-thumb {
+    background-color: brown;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.mySwiper2 .swiper-slide-active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mySwiper_1 .swiper-button-next,
+.swiper-button-prev {
+    background-color: #0070BC !important;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: white;
+}
+
+.mySwiper_1 .swiper-button-next svg,
+.mySwiper_1 .swiper-button-prev svg {
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+
+.swiper-wrapper {
+    padding: 5px;
+}
+
+.cart_icon,
+.wishlist_icon {
+    position: relative;
+}
+
+.cart_icon::after,
+.wishlist_icon::after {
+    content: '0';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 0px;
+    right: 0px;
+    font-size: 7px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(173, 22, 22);
+}
+
+.slider_add_to_cart {
+    display: none;
+}
+
+.featured_all_content:hover .slider_add_to_cart {
+    display: block;
+}
+
+
+
+@media(max-width:986px) {
+    .search_nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .category_nav_1 {
+        display: none;
+    }
+
+}
+
+@media (max-width: 620px) {
+    .place_order_button {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .place_order_button {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 446px) {
+    .place_order_button {
+        padding: 5px 7px;
+    }
+}
+
+@media(max-width: 878px) {
+    .heading_text {
+        font-size: 23px;
+    }
+
+    .vitamin_bannr {
+        flex-direction: column;
+    }
+}
+
+.search_nav input::placeholder {
+    color: #184363;
+}
+
+.hamburger_menu {
+    display: none;
+}
+
+.whole_hero_image img {
+    width: 100%;
+}
+
+.hero_button button {
+    width: 100%;
+    max-width: 150px;
+}
+
+@media screen and (max-width:991px) {}
+
+@media screen and (max-width:768px) {
+    .footer_section{
+        gap: 20px;
+    }
+}
+
+
+@media screen and (max-width: 1600px) {
+    .home_box_1 p {
+        font-size: 18px;
+    }
+
+    .home_box_1 h3 {
+        font-size: 24px;
+    }
+    .prodct_servces li{
+        max-width: 60%;
+    }
+}
+
+
+@media screen and (max-width: 1400px) {
+
+    .cat_nav_items h5 {
         font-size: 13px;
     }
 
-    .nav_items span {
-        font-size: 13px;
+    .cat_nav_items {
+        gap: 25px;
     }
 
-    .banner_content h3 {
-        font-size: 35px;
+    .home_box_1 p {
+        font-size: 18px;
     }
 
-    .banner_content p {
+    .cat_nav_items {
+        gap: 20px;
+    }
+    .items_services li{
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .cat_nav_items {
+        gap: 10px;
+    }
+
+    .home_box_1 p {
         font-size: 16px;
     }
 
     .home_box_1 h3 {
         font-size: 20px;
     }
+    .items_services li{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .hero_left_box {
+        width: 100%;
+        max-width: 100%;
+    }
 
     .home_box_1 p {
-        font-size: 16px;
-    }
-    .featured_all_content{
-        width: 180px;
-    }
-    .trending_now_content{
-        width: 180px;
-    }
-    .skin_care_content{
-        width: 180px;
-    }
-    .explore_something_new_content{
-        width: 180px;
-    }
-    .spotlight_content{
-        width: 180px;
-    }
-    .super_saving_content{
-        width: 180px;
-    }
-    .immunity_supplement_content{
-        width: 180px;
-    }
-}
-
-@media (max-width: 1495px){
-    .supplement_content h2{
-        font-size: 25px;
-        text-align: center;
-    }
-}
-
-@media (max-width: 1390px) {
-
-    .search_input_box,
-    .search_input_box input {
-        width: 700px;
-    }
-
-    .vitamin_banner_left h2 {
-        font-size: 40px;
-    }
-
-    .banner_content h3 {
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 1200px){
-    .three_banner1 h1{
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 1280px) {
-
-    .search_input_box,
-    .search_input_box input {
-        width: 600px;
-    }
-
-    .featured_all_content{
-        width: 150px;
-    }
-
-    .featured_all_content h1{
-        font-size: 12px;
-    }
-    .featured_all_content p{
-        font-size: 10px;
-    }
-    .featured_all_content img{
-        max-width: 120px;
-        max-height: 120px;
-    }
-
-    .stars{
-        gap: 4px;
-        justify-content: center;
-    }
-    .stars ul{
-        gap: 2px;
-        font-size: 10px;
-    }
-
-    .health_cncern h1{
-        font-size: 16px;
-    }
-    
-    .heading_text {
-        font-size: 25px;
-    }
-
-    .trending_now_content h1{
-        font-size: 13px;
-    }
-    .trending_now_content p{
-        font-size: 12px;
-    }
-
-    .trending_now_content img{
-        max-width: 120px;
-        max-height: 120px;
-    }
-
-    .trending_now_content{
-        width: 140px;
-    }
-
-    .skin_care_content{
-        width: 140px;
-    }
-    .skin_care_content h1{
-        font-size: 13px;
-    }
-
-    .skin_care_content p{
-        font-size: 12px;
-    }
-    .explore_something_new_content{
-        width: 150px;
-    }
-    .explore_something_new_content h1{
-        font-size: 13px;
-    }
-
-    .explore_something_new_content p{
-        font-size: 12px;
-    }
-
-    .explore_something_new_content img{
-        max-width: 120px;
-        max-height: 120px;
-    }
-    .spotlight_content{
-        width: 150px;
-    }
-
-    .spotlight_content h1{
-        font-size: 13px;
-    }
-    .spotlight_content p{
-        font-size: 12px;
-    }
-
-    .spotlight_content img{
-        max-width: 120px;
-        max-height: 120px;
-    }
-    .super_saving_content{
-        width: 140px;
-    }
-
-    .super_saving_content h1{
-        font-size: 13px;
-    }
-    .super_saving_content p{
-        font-size: 12px;
-    }
-
-    .super_saving_content img{
-        max-width: 120px;
-        max-height: 120px;
-    }
-    .immunity_supplement_content{
-        width: 140px;
-    }
-    .immunity_supplement_content h1{
-        font-size: 13x;
-    }
-    
-    .immunity_supplement_content p{
-        font-size: 12px;
-    }
-    .immunity_supplement_content img{
-        max-width: 120px;
-        max-height: 120px;
-    }
-    .discount{
-        width: 32px;
-        top:5px;
-        left:10px;
-        font-size: 8px;
-    }
-
-
-}
-
-
-@media (max-width: 1168px) {
-    .banner_content h3 {
-        font-size: 28px;
-    }
-
-    .three_banner1 h2 {
-        font-size: 30px;
-    }
-
-    .three_banner1 h1 {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .box {
-        bottom: -100px !important;
+        gap: 10px;
     }
-}
 
-@media (max-width: 1024px){
-    .featured_all_content{
-        width: 165px;
-    }
-    .trending_now_content{
-        width: 165px;
-    }
-    .skin_care_content{
-        width: 165px;
-    }
-    .explore_something_new_content{
-        width: 165px;
-    }
-    .spotlight_content{
-        width: 165px;
-    }
-    .super_saving_content{
-        width: 165px;
-    }
-    .immunity_supplement_content{
-        width: 165px;
-    }
-}
-
-
-@media (max-width: 1086px) {
-    .banner_content h3 {
-        font-size: 25px;
-    }
-}
-
-@media (max-width: 1055px) {
-    .footer_email {
+    .category_nav_1 {
         display: none;
     }
-    .search_input_box,
-    .search_input_box input {
-        width: 500px;
+}
+
+@media screen and (max-width: 991px) {
+    .hero_left_box {
+        width: 100%;
+        max-width: 100%;
     }
-    .supplement_content h3{
+
+    .box {
+        gap: 5px;
+    }
+
+    .home_box_1 p {
+        font-size: 10px;
+    }
+
+    .hero_left_box h1 {
+        font-size: 40px;
+    }
+
+    .hero_left_box p {
+        font-size: 17px;
+    }
+
+    .hamburger_menu {
+        display: block;
+    }
+
+    .hamburger_menu button {
+        cursor: pointer;
+    }
+
+    .featured_all_content h3 {
+        font-size: 12px;
+    }
+
+    .slider_add_to_cart button,
+    p {
+        font-size: 14px;
+    }
+
+    .slider_add_to_cart span {
+        font-size: 12px;
+    }
+
+    .home_box_1 h3 {
+        font-size: 16px;
+    }
+
+    .box_1 {
+        width: 50px;
+        height: 50px;
+    }
+
+    .prodct_detail_cart {
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .home_box_1 p {
+        font-size: 7px;
+    }
+
+    .product_details_image {
+        height: 250px !important;
+    }
+
+    .home_box_1 h3 {
+        font-size: 12px;
+    }
+
+    .box {
+        gap: 2px;
+    }
+
+    .vitamin_banner_left {
+        padding: 10px;
+    }
+
+    .place_order_button {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width : 425px) {
+    .box_1 {
+        width: 40px;
+        height: 40px;
+    }
+
+    .all_category_button {
+        width: 60px;
+    }
+
+    .heading_text {
+        font-size: 18px;
+    }
+
+    .view_all {
         font-size: 15px;
     }
+
 }
 
-@media (max-width: 1024px){
-    .nav_items span{
-        font-size: 12px;
-    }
-    .nav_items{
-        gap: 6px;
-        padding: 0px;
-    }
-    .banner_content h3{
-        font-size: 25px;
-    }
-    .vitamin_banner_left h2{
-        font-size: 25px;
-    }
-    .three_banner1{
-        flex-direction: column;
-    }
-    .banner_content h3 {
-        font-size: 20px;
-    }
-    .three_banner1 h2{
-        font-size: 20px;
-    }
-    .search_input_box,
-    .search_input_box input {
-        width: 400px;
-    }
+.about_us {
+    background-image: url('../src/assets/Home/bckd_image.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-@media (max-width: 900px){
-    .search_input_box,
-    .search_input_box input {
-        width: 300px;
-    }
-}
-
-@media (max-width:892px){
-    .banner_content h3 {
-        font-size: 16px;
-    }
-    .banner_content p {
-        font-size: 13px;
-    }
-    .home_box_1 h3{
-        font-size: 16px;
-    }
-    .home_box_1 p{
-        font-size: 12px;
-    }
-    .cart_section{
-        width: 100px;
-    }
-}
-
-
-@media (max-width:800px){
-    .cart_section{
-        width: 100px;
-    }
-}
-
-.swiper-slide{
-    padding-right: 0px!important;
-}

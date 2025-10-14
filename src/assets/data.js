@@ -60,6 +60,27 @@ import marine from '../assets/Home/SuperDeals/marine.png'
 import Unienzyme from '../assets/Home/SuperDeals/Unienzyme.png'
 
 
+import big_image_1 from '../assets/Home/Product_Details_image/big_image_1.png'
+import small_image_1 from '../assets/Home/Product_Details_image/small_image_1.png'
+import small_image_2 from '../assets/Home/Product_Details_image/small_image_2.png'
+import small_image_3 from '../assets/Home/Product_Details_image/small_image_3.png'
+import small_image_4 from '../assets/Home/Product_Details_image/small_image_4.png'
+import small_image_5 from '../assets/Home/Product_Details_image/small_image_5.png'
+import small_image_6 from '../assets/Home/Product_Details_image/small_image_1.png'
+
+
+import proteinX_1 from '../assets/Home/Similar_Products/proteinX_1.png'
+import proteinX_2 from '../assets/Home/Similar_Products/proteinX_2.png'
+import proteinX_3 from '../assets/Home/Similar_Products/proteinX_3.png'
+import proteinX_4 from '../assets/Home/Similar_Products/proteinX_4.png'
+import proteinX_5 from '../assets/Home/Similar_Products/proteinX_5.png'
+import proteinX_6 from '../assets/Home/Similar_Products/proteinX_6.png'
+
+import company_photo_1 from '../assets/Home/Company Album/Company_photo_1.png'
+import company_photo_2 from '../assets/Home/Company Album/Company_photo_2.png'
+import company_photo_3 from '../assets/Home/Company Album/Company_photo_3.png'
+import company_photo_4 from '../assets/Home/Company Album/Company_photo_4.png'
+
 
 export const heading = [
     {
@@ -85,6 +106,18 @@ export const heading = [
     },
     {
         title: 'Super saving deals'
+    },
+    {
+        title: 'Ayurveda Top Brands'
+    },
+    {
+        title: 'Similar products'
+    },
+    {
+        title: 'Company Album'
+    },
+    {
+        title: 'Get In Touch'
     }
 ]
 
@@ -622,8 +655,208 @@ export const health_concern= [
     },
     {
         image: kerala_ayurved_brand,
+    },
+    {
+        image: company_photo_1,
+        title: 'Our Infrastructure',
+    },
+    {
+        image: company_photo_2,
+        title: 'Our Warehouse',
+    },
+    {
+        image: company_photo_3,
+        title: 'Infrastructure Facilities',
+    },
+    {
+        image: company_photo_4,
+        title: 'Infrastructural Set-Up'
     }
     
 ]
 
 
+
+export const product_detail_page_slider =[
+    {
+        image: big_image_1
+    },
+    {
+        image : small_image_1
+    },
+    {
+        image : small_image_2
+    },
+    {
+        image : small_image_3
+    },
+    {
+        image : small_image_4
+    },
+    {
+        image : small_image_5
+    },
+    {
+        image : small_image_6
+    }
+]
+
+export const flavour_and_Size = [
+    {
+        heading: 'Flavour (2)',
+        button1: 'Creamy Vanilla',
+        button2: 'Vanilla'
+    },
+    {
+        heading: 'Pack Size (2)',
+        button1: '200 gm Powder',
+        button2: '400 gm Powder'
+    }
+]
+
+
+
+export const prodct_details_tabs_content = [
+    {
+        info1: 'Protinex Diabetes Care is a vegetarian, ready-to-serve nutritional formulation for people with Diabetes. It is a scientifically designed nutrition supplement with protein and high fiber. Protein and high fiber diets have shown to help blood sugar control and induce satiety. Protinex Diabetes Care is clinically proven to have Low GI. It also contains 30 essential nutrients including 11 immuno-nutrients that help support strength. Available in Vanilla Flavor, it’s a tasty drink with zero added sugar and low-fat content that makes it suitable for people with diabetes.',
+        info2: 'Skimmed Milk Powder, Dextrin (Soluble Fiber), Soy Protein Isolate, Corn Flour, Soy Fiber, Maize Starch, Wheat Bran, Nature identical Flavoring Substances, Vitamins, Minerals, Taurine, Sweetener (Sucralose)',
+        feature_1: 'Free 1 Year Warranty',
+        feature_2: 'Free Shipping & Fasted Delivery',
+        feature_3: '100% Money-back guarantee',
+        feature_4: '24/7 Customer support',
+        feature_5: 'Secure payment method',
+        product_highlight_1: 'Helps maintain blood sugar levels',
+        product_highlight_2: 'Meets protein and fibre requirements in patients with diabetes',
+        product_highlight_3: 'High in fibre and protein',
+        product_highlight_4: 'Low glycemic index and fat',
+    },
+    {
+        title_1:'Manufacturer',
+        para_1: 'Nutricia International Pvt Ltd., Nutricia International Private Limited, Pheonix Market City, Centrium Gate 1, Level 3, Office No. 1, LBS Marg, Kurla (W), Mumbai-400070, Tel : +91 22 66696740',
+        title_2: 'Packer',
+        para_2: 'Nutricia International Private Limited, Pheonix Market City, Centrium Gate 1, Level 3, Office No. 1, LBS Marg, Kurla (W), Mumbai-400070, Tel : +91 22 66696740',
+        title_3: 'Item Weight',
+        para_3:200,
+        title_4 :'Item Dimensions LxWxH',
+        para_4: '35 x 150 x 180 Millimeters',
+        title_5 :'Net Quantity',
+        para_5: 200.0,
+        title_6 :'Included Components',
+        para_6: '1 pack of Protinex Diabetes Care',
+        title_7 :'Generic Name',
+        para_7: 'Nutrition Drink',
+        title_8 :'Best Sellers Rank',
+        para_8: '#305 in Health & Personal Care (See Top 100 in Health & Personal Care) #2 in Diabetes Care',
+        Technical_detail_1_title: 'Manufacturer',
+        Technical_detail_1_info: '  Nutricia International Pvt Ltd',
+        Technical_detail_2_title: 'Country of Origin',
+        Technical_detail_2_info: 'IndiaItem part number 178162',
+        Technical_detail_3_title: 'Product Dimensions',
+        Technical_detail_3_info:  '3.5 x 15 x 18 cm; 200 g',
+        Technical_detail_4_title: 'ASIN',
+        Technical_detail_4_info:  'B09DQLLV9Q',
+    },
+    {
+        txt:`Product Dimensions  : ‎ 3.5 x 15 x 18 cm; 200 g
+Date First Available ‏ : ‎ 26 August 2021
+Manufacturer ‏ : ‎ Nutricia International Pvt Ltd.
+ASIN ‏ : ‎ B09DQLLV9Q
+Item part number ‏ : ‎ 178162
+Country of Origin ‏ : ‎ India
+Manufacturer ‏ : ‎ Nutricia International Pvt Ltd., Nutricia International Private Limited, Pheonix Market City, Centrium Gate 1, Level 3, Office No. 1, LBS Marg, Kurla (W), Mumbai-400070, Tel : +91 22 66696740
+Packer ‏ : ‎ Nutricia International Private Limited, Pheonix Market City, Centrium Gate 1, Level 3, Office No. 1, LBS Marg, Kurla (W), Mumbai-400070, Tel : +91 22 66696740
+Item Weight ‏ : ‎ 200 g
+Item Dimensions LxWxH ‏ : ‎ 35 x 150 x 180 Millimeters
+Net Quantity ‏ : ‎ 200.0 gram
+Included Components ‏ : ‎ 1 pack of Protinex Diabetes Care
+Generic Name ‏ : ‎ Nutrition Drink
+Best Sellers Rank: #305 in Health & Personal Care (See Top 100 in Health & Personal Care)`    
+    }
+]
+
+
+
+
+export const Reviews_content =[
+    {
+        name: 'Anonymous User',
+        date_review: '10/14/2025',
+        time_review: '1:06:32 AM',
+        info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis justo, venenatis vel sem non, fringilla rutrum quam. Curabitur libero sapien, consectetur et tincidunt eu, maximus id quam'
+    },
+    {
+        name: 'Chetna',
+        date_review: '10/25/2025',
+        time_review: '1:10:37 AM',
+        info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis justo, venenatis vel sem non, fringilla rutrum quam. Curabitur libero sapien, consectetur et tincidunt eu, maximus id quam'
+    }
+]
+
+export const similarProducts = [
+    {
+        id: 1,
+        image: proteinX_1,
+        name: 'Protinex High Quality Protein | Nutritional Drink for Immunity & Strength  ',
+        deliver_time: "Delivery in",
+        time: "30 min",
+        star_content : "12",
+        old_price : 312,
+        new_price: 212,
+        discount: ''
+    },
+    {
+        id: 2,
+        image: proteinX_2,
+        name: 'Protinex High Quality Protein | Nutritional Drink for Immunity & Strength  ',
+        deliver_time: "Delivery in",
+        time: "30 min",
+        star_content : "12",
+        old_price : 312,
+        new_price: 212,
+        discount: ''
+    },
+    {
+        id: 3,
+        image: proteinX_3,
+        name: 'Nutritional Drink for Immunity & Strength | Original Classic Powder  ',
+        deliver_time: "Delivery in",
+        time: "30 min",
+        star_content : "12",
+        old_price : 312,
+        new_price: 212,
+        discount: ''
+    },
+    {
+        id: 4,
+        image: proteinX_4,
+        name: 'Nutritional | Zero Added Sugar Rich Chocolate Powder',
+        deliver_time: "Delivery in",
+        time: "30 min",
+        star_content : "12",
+        old_price : 312,
+        new_price: 212,
+        discount: ''
+    },
+    {
+        id: 5,
+        image: proteinX_5,
+        name: 'Nisarga Herbs Imutizer Syrup ',
+        deliver_time: "Delivery in",
+        time: "30 min",
+        star_content : "12",
+        old_price : 312,
+        new_price: 212,
+        discount: -20
+    },
+    {
+        id: 6,
+        image: proteinX_6,
+        name: 'Protinex Mother’s Drink with DHA, Vitamins & Protein   ',
+        deliver_time: "Delivery in",
+        time: "30 min",
+        star_content : "12",
+        old_price : 312,
+        new_price: 212,
+        discount: ''
+    },
+]

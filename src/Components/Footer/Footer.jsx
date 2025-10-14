@@ -1,87 +1,81 @@
 import React from 'react'
-import footer_logo from '../../assets/Home/Footer_logo.png'
+import logo from '../../assets/Home/Footer_logo.png'
+import { IoIosSend } from 'react-icons/io'
 import { Link } from 'react-router-dom'
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
-import { CiMail } from 'react-icons/ci'
+import { MdOutlineMail } from 'react-icons/md'
+import { FaFacebook } from 'react-icons/fa'
+import { FaInstagram, FaLinkedin, FaTelegram, FaYoutube } from 'react-icons/fa6'
 
 const Footer = () => {
   return (
-    <section className='bg-[#184363] text-white '>
-      <footer className=''>
-        <div className='pt-20'>
-          <div className='container flex gap-10 text-[14px]'>
-            <div className='w-[517px]'>
-              <div className='w-full flex flex-col gap-3'>
-                <div className='w-[257px] h-[84px]'>
-                  <img src={footer_logo} className='w-full h-full' />
-                </div>
-                <p>Stay tuned for latest updates and new features</p>
-                <div className='w-[425px] h-[42px] flex items-center'>
-                  <div className='w-[282px] h-[42px]'>
-                    <input type='text' className='w-full h-full border-1 text-black bg-white border-white outline-none rounded-tl-[48px] rounded-bl-[48px] px-3' placeholder='Email address' />
-                  </div>
-                  <span className='w-[143px] h-[42px] rounded-tr-[48px] rounded-br-[48px] flex items-center justify-center gap-2 bg-[#0070BC] text-white'>Subscribe</span>
-                </div>
-                <div className='flex items-center gap-4'>
-                  <input type='checkbox' />
-                  <span className='text-[11px]'>I accept terms and conditions & privacy policy</span>
-                </div>
+    <section className='bg-[#184363]'>
+      <div className='container_box'>
+        <div className='footer_section grid grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-3 gap-5 p-4'>
+          <div className='text-white w-full pt flex flex-col gap-2'>
+            <div>
+              <img src={logo} />
+            </div>
+            <span className='text-[14px]'>Stay tuned for latest updates and new features</span>
+            <div className='relative'>
+              <div className=' w-full rounded-full bg-white px-3 py-2'>
+                <input type='text' placeholder='Email address' className='outline-none text-black' />
+              </div>
+              <div className='absolute top-0 right-0 bg-[#0070BC] flex gap-2 h-full rounded-r-full justify-center items-center p-3'>
+                <span><IoIosSend /></span>
+                <span className='text-[14px]'>Subscribe</span>
               </div>
             </div>
-            <div className='gs w-[142px]'>
-              <div className='w-full'>
-                <h3 className='text-[16px] font-semibold'>Company Profile</h3>
-                <ul className='flex flex-col gap-3 mt-5'>
-                  <Link to={'/home'}><li className='text-[#E0EEF9] text-[14px]'>Home</li></Link>
-                  <Link to={'/aboutus'}><li className='text-[#E0EEF9] text-[14px]'>About Us</li></Link>
-                  <Link to={'/ourproducts'}><li className='text-[#E0EEF9] text-[14px]'>Our Products</li></Link>
-                  <Link to={'/contactus'}><li className='text-[#E0EEF9] text-[14px]'>Contact Us</li></Link>
-                </ul>
-              </div>
+            <div className='flex gap-3'>
+              <input type='checkbox' />
+              <span className='text-[11px]'>I accept terms and conditions & privacy policy</span>
             </div>
-            <div className='gs w-[500px]'>
-              <div className='w-full'>
-                <h3 className='text-[16px] font-semibold'>Products & Services</h3>
-                <div className='mt-5'>
-                  <ul className='flex flex-wrap gap-3'>
-                    <li className='text-[#E0EEF9] text-[14px] w-full max-w-[221px]'><Link to={'/home'}>Blood Pressure Monitor</Link></li>
-                    <li className='text-[#E0EEF9] text-[14px] w-full max-w-[192px]'><Link to={'/ourproducts'}>Aneroid Sphygmomanometer</Link></li>
-                    <li className='text-[#E0EEF9] text-[14px] w-full max-w-[221px]'><Link to={'/home'}>Stethoscope</Link></li>
-                    <li className='text-[#E0EEF9] text-[14px] w-full max-w-[192px]'><Link to={'/ourproducts'}>Pulse Oximeter</Link></li>
-                    <li className='text-[#E0EEF9] text-[14px] w-full max-w-[221px]'><Link to={'/home'}>Blood Glucose Test Strip</Link></li>
-                    <li className='text-[#E0EEF9] text-[14px] w-full max-w-[192px]'><Link to={'/ourproducts'}>Fingertip Pulse Oximeter</Link></li>
-                    <li className='text-[#E0EEF9] text-[14px] w-full max-w-[221px]'><Link to={'/home'}>Digital Thermometer</Link></li>
-                    <li className='text-[#E0EEF9] text-[14px] w-full max-w-[192px]'><Link to={'/ourproducts'}>Test Strips</Link></li>
-                    <li className='text-[#E0EEF9] text-[14px] w-full max-w-[221px]'><Link to={'/ourproducts'}>Blood Glucose Monitoring System</Link></li>
-                    <li className='text-[#E0EEF9] text-[14px] w-full max-w-[192px]'><Link to={'/ourproducts'}>Kitchen Tools</Link></li>
-                    <li className='text-[#E0EEF9] text-[14px] w-full max-w-[221px]'><Link to={'/ourproducts'}>Medical Stethoscope</Link></li>
-                    <li className='text-[#E0EEF9] text-[14px] w-full max-w-[192px]'><Link to={'/ourproducts'}>Nebulizer Machine</Link></li>
-                    <li className='text-[#E0EEF9] text-[14px] w-full max-w-[221px]'><Link to={'/ourproducts'}>Weighing Scale</Link></li>
-                    <li className='text-[#E0EEF9] text-[14px] w-full max-w-[192px]'><Link to={'/ourproducts'}>Blood Lancet</Link></li>
-                    <li className='text-[#E0EEF9] text-[14px] w-full max-w-[221px]'><Link to={'/ourproducts'}>Sugar Test Strips</Link></li>
-                  </ul>
-                </div>
-              </div>
+          </div>
+          <div className='text-white flex flex-col items-start w-full flex flex-col gap-3 gs'>
+            <h3 className='text-[16px] font-semibold'>Company Profile</h3>
+            <ul className='flex text-[14px] text-[#E0EEF9] font-500 flex-col gap-2'>
+              <li><Link>Home</Link></li>
+              <li><Link>About Us</Link></li>
+              <li><Link>Our Products</Link></li>
+              <li><Link>Contact Us</Link></li>
+            </ul>
+          </div>
+
+          <div className='text-white flex flex-col gap-3 text-start w-full gs prodct_servces'>
+            <h3 className='text-[16px] font-semibold'>Products & Services</h3>
+            <ul className='grid 2xl:grid-cols-2 xl:grid-cols-2 lg-grid-cols-2 md:grid-cols-1 gap-2 text-[14px] font-500 gap-3 public_sans text-[#E0EEF9] items-start items_services'>
+              <li className='  text-[14px]'><Link>Blood Pressure Monitor</Link></li>
+              <li className='  text-[14px]'><Link >Stethoscope</Link></li>
+              <li className='  text-[14px]'><Link>Blood Glucose Test Strip</Link></li>
+              <li className='  text-[14px]'><Link>Digital Thermometer</Link></li>
+              <li className='  text-[14px]'><Link>Blood Glucose Monitoring System</Link></li>
+              <li className='  text-[14px]'><Link>Medical Stethoscope</Link></li>
+              <li className='  text-[14px]'><Link>Weighing Scale</Link></li>
+              <li className='  text-[14px]'><Link>Sugar Test Strips</Link></li>
+              <li className='  text-[14px]'><Link>Aneroid Sphygmomanometer</Link></li>
+              <li className='  text-[14px]'><Link>Pulse Oximeter</Link></li>
+              <li className='  text-[14px]'><Link>Fingertip Pulse Oximeter</Link></li>
+              <li className='  text-[14px]'><Link>Test Strips</Link></li>
+              <li className='  text-[14px]'><Link>Kitchen Tools</Link></li>
+              <li className='  text-[14px]'><Link>Nebulizer Machine</Link></li>
+              <li className='  text-[14px]'><Link>Blood Lancet</Link></li>
+            </ul>
+          </div>
+          <div className='email_footer text-white items-start flex flex-col gap-3 w-full  pt'>
+            <h3 className='text-[16px] font-semibold'>About / Contacts</h3>
+            <div className='flex gap-3 justify-center items-center'>
+              <span><MdOutlineMail size={20} /></span>
+              <span>firstmed@gmail.com</span>
             </div>
-            <div className=' w-[257px] footer_email'>
-              <div className='w-full flex flex-col gap-4'>
-                <h3 className='font-semibold text-[16px]'>About / Contacts</h3>
-                <div className='flex items-center gap-4'>
-                  <span><CiMail size={20}/></span>
-                  <span>firstmed@gmail.com</span>
-                </div>
-                <div className='flex items-center gap-3'>
-                  <span className='w-[40px] h-[40px] bg-[#0070BC] rounded-md text-white flex items-center justify-center'><FaFacebook size={20} /></span>
-                  <span className='w-[40px] h-[40px] bg-[#0070BC] rounded-md text-white flex items-center justify-center'><FaInstagram size={20} /></span>
-                  <span className='w-[40px] h-[40px] bg-[#0070BC] rounded-md text-white flex items-center justify-center'><FaLinkedin size={20} /></span>
-                  <span className='w-[40px] h-[40px] bg-[#0070BC] rounded-md text-white flex items-center justify-center'><FaTwitter size={20} /></span>
-                  <span className='w-[40px] h-[40px] bg-[#0070BC] rounded-md text-white flex items-center justify-center'><FaYoutube size={20} /></span>
-                </div>
-              </div>
+            <div className='flex gap-4'>
+              <span><FaFacebook size={25} /></span>
+              <span><FaInstagram size={25} /></span>
+              <span><FaLinkedin size={25} /></span>
+              <span><FaTelegram size={25} /></span>
+              <span><FaYoutube size={25} /></span>
             </div>
           </div>
         </div>
-      </footer>
+      </div>
     </section>
   )
 }

@@ -5,50 +5,67 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
+import Header from '../Header/Header';
 
 
 const AyurvedaTopBrand = () => {
     const displayBrands = health_concern.slice(12, 23)
     return (
 
-        <div className='mt-20 h-[407px] bg-[#0070BC1A] '>
-            <div className='container nnt h-full'>
-                <div className='pt-20'>
-                    <h2 className='text-[32px] font-bold'>Ayurveda top brands</h2>
+        <div className='mt-20 h-[407px] bg-[#0070BC1A] ayurveda_container '>
+            <div className='container_box nnt h-full'>
+                <div className='pt-20 ayurved_top'>
+                    <div>
+                        <Header title={heading[7].title} />
+                    </div>
                     <Swiper
                         breakpoints={{
+                            250: {
+                                slidesPerView: 2,
+                                spaceBetween: 10,
+                            },
+                            380: {
+                                slidesPerView: 2,
+                                spaceBetween: 10,
+                            },
+                            480: {
+                                slidesPerView: 2,
+                                spaceBetween: 10,
+                            },
+                            578: {
+                                slidesPerView: 3,
+                                spaceBetween: 10,
+                            },
                             640: {
                                 slidesPerView: 3,
-                                spaceBetween: 20,
+                                spaceBetween: 10,
                             },
                             768: {
                                 slidesPerView: 4,
-                                spaceBetween: 40,
+                                spaceBetween: 10,
                             },
                             1024: {
                                 slidesPerView: 6,
-                                spaceBetween: 20,
+                                spaceBetween: 10,
                             },
-                            1208: {
-                                    slidesPerView: 6,
-                                spaceBetween: 20,
-                                }
+
+                            1400: {
+                                slidesPerView: 6,
+                                spaceBetween: 10,
+                            },
+                            1536: {
+                                slidesPerView: 6,
+                                spaceBetween: 10,
                             }
-                        }
+                        }}
                         slidesPerView={6}
                         spaceBetween={10}
                         className="mySwiperone"
                     >
                         <div>
-                            {displayBrands.map((item, index) => {
-                                return (
-                                    <SwiperSlide key={index}>
-                                        <div className='w-[150px] h-[150px] group mt-5 cursor-pointer'>
-                                            <img src={item.image} className='w-full h-full group-hover:scale-90' />
-                                        </div>
-                                    </SwiperSlide>
-                                )
-                            })}
+                            <SwiperSlide key={index}>
+
+                            </SwiperSlide>
                         </div>
                     </Swiper>
                 </div>
