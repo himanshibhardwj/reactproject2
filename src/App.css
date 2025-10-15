@@ -107,6 +107,9 @@ input[type="range"]::-webkit-slider-thumb {
     position: relative;
 }
 
+.swiper-initialized{
+    padding: 10px!important;
+}
 .cart_icon::after,
 .wishlist_icon::after {
     content: '0';
@@ -140,11 +143,9 @@ input[type="range"]::-webkit-slider-thumb {
         flex-direction: column;
         gap: 10px;
     }
-
     .category_nav_1 {
         display: none;
     }
-
 }
 
 @media (max-width: 620px) {
@@ -169,7 +170,6 @@ input[type="range"]::-webkit-slider-thumb {
     .heading_text {
         font-size: 23px;
     }
-
     .vitamin_bannr {
         flex-direction: column;
     }
@@ -192,11 +192,18 @@ input[type="range"]::-webkit-slider-thumb {
     max-width: 150px;
 }
 
-@media screen and (max-width:991px) {}
-
 @media screen and (max-width:768px) {
     .footer_section{
         gap: 20px;
+    }
+    .mask_content{
+        top: 10px;
+    }
+    .box{
+        width: 85%;
+    }
+    .medicine_banner_image{
+        width: 100%;
     }
 }
 
@@ -209,14 +216,13 @@ input[type="range"]::-webkit-slider-thumb {
     .home_box_1 h3 {
         font-size: 24px;
     }
-    .prodct_servces li{
-        max-width: 60%;
-    }
+    /* .prodct_servces li{
+        max-width: 80%;
+    } */
 }
 
 
 @media screen and (max-width: 1400px) {
-
     .cat_nav_items h5 {
         font-size: 13px;
     }
@@ -231,9 +237,6 @@ input[type="range"]::-webkit-slider-thumb {
 
     .cat_nav_items {
         gap: 20px;
-    }
-    .items_services li{
-        max-width: 50%;
     }
 }
 
@@ -252,6 +255,22 @@ input[type="range"]::-webkit-slider-thumb {
     .items_services li{
         width: 100%;
     }
+    .mask_heading h3,p{
+        font-size: 20px;
+    }
+    .mask_content button{
+        font-size: 15px;
+    }
+    .input_box{
+        font-size: 12px;
+    }
+    .subscribe_btn{
+        font-size: 10px;
+        right: 18%;
+    }
+    .footer_col_1{
+        gap: 10px;
+    }
 
 }
 
@@ -265,12 +284,34 @@ input[type="range"]::-webkit-slider-thumb {
         font-size: 15px;
     }
 
+    .image_hero{
+        width: 100%;
+        max-width: 80%;
+    }
+
     .box {
         gap: 10px;
     }
 
     .category_nav_1 {
         display: none;
+    }
+    
+    /* .mask_content button{
+        font-size: 14px;
+    }
+    .mask_heading{
+        margin-top: 3px;
+    }
+    .mask_shop_now{
+        padding: 4px;
+    }
+    .mask_shop_now{
+        margin-top: 0px;
+    } */
+
+    .mask_page{
+        flex-direction: column;
     }
 }
 
@@ -309,7 +350,7 @@ input[type="range"]::-webkit-slider-thumb {
     }
 
     .slider_add_to_cart button,
-    p {
+    p{
         font-size: 14px;
     }
 
@@ -330,12 +371,25 @@ input[type="range"]::-webkit-slider-thumb {
         padding: 0px;
         margin-bottom: 0px;
     }
+
+    .footer_section{
+        flex-direction: column;
+    }
+    .footer_col_1{
+        width: 100%;
+    }
+    .subscribe_btn{
+        right: 24%;
+    }
+    .footer_col_2{
+        margin-top: 18px;
+    }
+    .vitamin_banner_left{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 576px) {
-    .home_box_1 p {
-        font-size: 7px;
-    }
 
     .product_details_image {
         height: 250px !important;
@@ -357,6 +411,28 @@ input[type="range"]::-webkit-slider-thumb {
         width: 100%;
     }
 
+    .vitamins_banner .vitamin_image{
+        width: 100%;
+    }
+
+    .vitamins_banner .capsule_image{
+        width: 100%;
+    }
+    .footer_social_icons{
+        gap: 8px;
+    }
+    .footer_col_2{
+       width: 80%;
+    }
+    /* .footr_logo img{
+        width: 100%;
+        max-width: 50%;
+    } */
+
+    .footer_subclm{
+        width: 100%;
+        max-width: 45%;
+    }
 }
 
 @media screen and (max-width : 425px) {
@@ -376,7 +452,6 @@ input[type="range"]::-webkit-slider-thumb {
     .view_all {
         font-size: 15px;
     }
-
 }
 
 .about_us {
@@ -386,3 +461,6 @@ input[type="range"]::-webkit-slider-thumb {
     background-size: cover;
 }
 
+.footer_container hr{
+    color: #FFFFFF33;
+}

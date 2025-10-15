@@ -20,7 +20,7 @@ const ThreeBannerContent = () => {
                         </div>
                     </div>
                     <div className='w-8/12 flex items-center justify-center'>
-                        <img src={ThreeBaner_1}/>
+                        <img src={ThreeBaner_1} className='w-full'/>
                     </div>
                 </div>
                 <div className='flex flex-col gap-3'>
@@ -35,7 +35,7 @@ const ThreeBannerContent = () => {
                             </div>
                         </div>
                         <div className='w-8/12 flex items-center justify-center'>
-                            <img src={ThreeBaner_2}/>
+                            <img src={ThreeBaner_2} className='w-full'/>
                         </div>
                     </div>
                     <div className='flex gap-3 bg-[#FDF7E8] flex-row rounded-md three_banner1'>
@@ -49,7 +49,7 @@ const ThreeBannerContent = () => {
                             </div>
                         </div>
                         <div className='w-7/12 flex items-center justify-center'>
-                            <img src={ThreeBaner_3} />
+                            <img src={ThreeBaner_3} className='w-full'/>
                         </div>
                     </div>
                 </div>

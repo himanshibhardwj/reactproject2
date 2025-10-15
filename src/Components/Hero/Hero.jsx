@@ -20,7 +20,7 @@ const Hero = () => {
             <button className=' py-2 text-[11px] 2xl:text-[19px] xl:text-[15px] md:text-[18px] lg:text-[13px] font-bold text-[#0070BC] bg-white rounded-full'>Buy it now </button>
           </div>
         </div>
-        <div className='w-full max-w-5/12'>
+        <div className='w-full max-w-5/12 image_hero'>
           <div className='flex items-end justify-center'>
             <div className='w-full'>
               <img src={image_1} className='w-full' />

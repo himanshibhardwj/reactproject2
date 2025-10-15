@@ -81,6 +81,8 @@ import company_photo_2 from '../assets/Home/Company Album/Company_photo_2.png'
 import company_photo_3 from '../assets/Home/Company Album/Company_photo_3.png'
 import company_photo_4 from '../assets/Home/Company Album/Company_photo_4.png'
 
+import mask_banner_2 from '../assets/Home/Banner/BannerMask_1.png'
+import mask_banner_1 from '../assets/Home/Banner/BannerMask_2.png'
 
 export const heading = [
     {
@@ -698,6 +700,18 @@ export const product_detail_page_slider =[
     },
     {
         image : small_image_6
+    },
+    {
+        image: mask_banner_1,
+        button_content: 99,
+        heading: 'Breathable',
+        title: 'Face Mask',
+    },
+    {
+        image: mask_banner_2,
+        button_content: 499,
+        heading: 'Covid 19 pack',
+        title: 'Get it now 45% Off'
     }
 ]
 

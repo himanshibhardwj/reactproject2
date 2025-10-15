@@ -1,4 +1,11 @@
 import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
+
 
 const Items_HealthConcern = () => {
     return (
@@ -40,11 +47,11 @@ const Items_HealthConcern = () => {
         >
 
             <SwiperSlide>
-                <div className='flex items-center flex-col gap-3 mt-5 health_cncern2'>
+                <div className='flex items-center justify-center flex-col gap-3 mt-5 health_cncern2'>
                     <div className='w-7/12 cursor-pointer group'>
                         <img src={item.image} className='w-full h-full object-contain group-hover:scale-110' />
                     </div>
-                    <h3 className='text-center text-[15px] 2xl:text-[18px] xl:text-[17px] md:text-[18px] lg:text-[15px] font-bold text-[#020A13]'>{item.title}</h3>
+                    <h3 className='text-[15px] text-center 2xl:text-[18px] xl:text-[17px] md:text-[18px] lg:text-[15px] font-bold text-[#020A13]'>{item.title}</h3>
                 </div>
             </SwiperSlide>
         </Swiper>

@@ -14,13 +14,14 @@ import AyurvedaTopBrand from '../Components/VitaminsAndSupplementsBanner/Ayurved
 import Spotlight from '../Components/TrendingNow/Spotlight'
 import ThreeBannerContent from '../Components/ThreeBanner/ThreeBannerContent'
 import SuperSavingDeals from '../Components/SuperSavingDeals/SuperSavingDeals'
+import HomeMaskBanner from '../Components/HomeMaskBanner'
 
 const Home = () => {
   return (
     <>
         <Hero/>
         <FeatureAll/>
-        {/* <HealthConcern/>
+        <HealthConcern/>
         <ImmunitySupplements/>
         <Vitamins_Supplements/>
         <TrendingNow/>
@@ -31,7 +32,8 @@ const Home = () => {
         <AyurvedaTopBrand/>
         <Spotlight/>
         <ThreeBannerContent/>
-        <SuperSavingDeals/> */}
+        <SuperSavingDeals/>
+        <HomeMaskBanner/>
     </>
   )
 }
