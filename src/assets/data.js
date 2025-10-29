@@ -93,8 +93,13 @@ import pay_2 from '../assets/Home/CheckOut/phonepe.png'
 import pay_3 from '../assets/Home/CheckOut/amazon.png'
 import pay_4 from '../assets/Home/CheckOut/CreditCard.png'
 
-
-
+import account_details from '../assets/Home/DashboardImages/account_details.png'
+import location from '../assets/Home/DashboardImages/location.png'
+import order from '../assets/Home/DashboardImages/order.png'
+import return_refund from '../assets/Home/DashboardImages/return_refund.png'
+import wishlist from '../assets/Home/DashboardImages/wishlist.png'
+import logout from '../assets/Home/DashboardImages/logout.png'
+import stack from '../assets/Home/DashboardImages/Stack.png'
 
 
 export const heading = [
@@ -948,4 +953,34 @@ export const payment_checkout =[
         pay: pay_4,
         img_txt: 'Debid/Credit Card',
     }
+]
+export const dashboard_tabs =[
+    {
+        img: stack,
+        tab: 'Dashboard'
+    },
+    {
+        img: order,
+        tab: 'Order'
+    },
+    {
+        img: location,
+        tab: 'Addresses'
+    },
+    {
+        img: return_refund,
+        tab: 'Return/Refund '
+    },
+    {
+        img: wishlist,
+        tab: 'Wishlist'
+    },
+    {
+        img: account_details,
+        tab: 'Account details'
+    },
+    {
+        img: logout,
+        tab: 'Log-out'
+    },
 ]

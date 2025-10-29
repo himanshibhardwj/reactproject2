@@ -12,10 +12,10 @@ const Dashboard = () => {
                 <li><Link>User Account</Link></li>
                 <li className='text-[#DB3030]'><Link>Dashboard</Link></li>
             </ul>
-            <div className='mt-5'>
-                <div className='flex justify-between container_box'>
-                    <div className='w-4/12'><DashboardLeft /></div>
-                    <div className='w-7/12'><DashboardRight /></div>
+            <div className='mt-10'>
+                <div className='flex justify-between container_box rounded'>
+                    <div className='w-2/12 bg-white shadow py-3'><DashboardLeft /></div>
+                    <div className='w-8/12'><DashboardRight /></div>
                 </div>
             </div>
         </section>

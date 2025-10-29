@@ -280,6 +280,9 @@ ul.breadcrumb li {
     justify-content: center;
 }
 
+.img_dshbrd_active{
+    backdrop-filter: invert(1) brightness(8.5);
+}
 
 @media screen and (max-width: 1600px) {
     .home_box_1 p {
@@ -1680,7 +1683,6 @@ ul.breadcrumb li {
     .newltter_sarch input {
         font-size: 9px;
     }
-
 }
 
 @media screen and (max-width: 425px) {
