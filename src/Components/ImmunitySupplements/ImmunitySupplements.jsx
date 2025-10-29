@@ -19,8 +19,8 @@ const ImmunitySupplements = () => {
         <>
             <div className='mt-20 '>
                 <div className='container_box nnt '>
-                    <div className='mb-5 flex items-center justify-between'><Header title={heading[2].title} />
-                        <div className='view_all cursor-pointer'><Link><ViewAll /></Link></div>
+                    <div className='mb-5 flex heading_view justify-between'><Header title={heading[2].title} />
+                        <div className='view_all cursor-pointer'><Link to={'/ourproducts'}><ViewAll /></Link></div>
                     </div>
                     <Swiper
                         breakpoints={{

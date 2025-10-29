@@ -60,6 +60,10 @@ import marine from '../assets/Home/SuperDeals/marine.png'
 import Unienzyme from '../assets/Home/SuperDeals/Unienzyme.png'
 
 
+import cart_image_1 from '../assets/Home/Similar_Products/proteinX_6.png'
+import cart_image_2 from '../assets/Home/Similar_Products/proteinX_5.png'
+
+
 import big_image_1 from '../assets/Home/Product_Details_image/big_image_1.png'
 import small_image_1 from '../assets/Home/Product_Details_image/small_image_1.png'
 import small_image_2 from '../assets/Home/Product_Details_image/small_image_2.png'
@@ -83,6 +87,15 @@ import company_photo_4 from '../assets/Home/Company Album/Company_photo_4.png'
 
 import mask_banner_2 from '../assets/Home/Banner/BannerMask_1.png'
 import mask_banner_1 from '../assets/Home/Banner/BannerMask_2.png'
+
+import pay_1 from '../assets/Home/CheckOut/cash.png'
+import pay_2 from '../assets/Home/CheckOut/phonepe.png'
+import pay_3 from '../assets/Home/CheckOut/amazon.png'
+import pay_4 from '../assets/Home/CheckOut/CreditCard.png'
+
+
+
+
 
 export const heading = [
     {
@@ -120,6 +133,15 @@ export const heading = [
     },
     {
         title: 'Get In Touch'
+    },
+    {
+        title: 'Our Products'
+    },
+    {
+        title: 'Wishlist (5)'
+    },
+    {
+        title: 'Just for You'
     }
 ]
 
@@ -732,6 +754,8 @@ export const flavour_and_Size = [
 
 export const prodct_details_tabs_content = [
     {
+        id: 1,
+        tab: 'Description',
         info1: 'Protinex Diabetes Care is a vegetarian, ready-to-serve nutritional formulation for people with Diabetes. It is a scientifically designed nutrition supplement with protein and high fiber. Protein and high fiber diets have shown to help blood sugar control and induce satiety. Protinex Diabetes Care is clinically proven to have Low GI. It also contains 30 essential nutrients including 11 immuno-nutrients that help support strength. Available in Vanilla Flavor, it’s a tasty drink with zero added sugar and low-fat content that makes it suitable for people with diabetes.',
         info2: 'Skimmed Milk Powder, Dextrin (Soluble Fiber), Soy Protein Isolate, Corn Flour, Soy Fiber, Maize Starch, Wheat Bran, Nature identical Flavoring Substances, Vitamins, Minerals, Taurine, Sweetener (Sucralose)',
         feature_1: 'Free 1 Year Warranty',
@@ -745,6 +769,8 @@ export const prodct_details_tabs_content = [
         product_highlight_4: 'Low glycemic index and fat',
     },
     {
+        id: 2,
+        tab: 'Additional information',
         title_1:'Manufacturer',
         para_1: 'Nutricia International Pvt Ltd., Nutricia International Private Limited, Pheonix Market City, Centrium Gate 1, Level 3, Office No. 1, LBS Marg, Kurla (W), Mumbai-400070, Tel : +91 22 66696740',
         title_2: 'Packer',
@@ -771,20 +797,27 @@ export const prodct_details_tabs_content = [
         Technical_detail_4_info:  'B09DQLLV9Q',
     },
     {
-        txt:`Product Dimensions  : ‎ 3.5 x 15 x 18 cm; 200 g
-Date First Available ‏ : ‎ 26 August 2021
-Manufacturer ‏ : ‎ Nutricia International Pvt Ltd.
-ASIN ‏ : ‎ B09DQLLV9Q
-Item part number ‏ : ‎ 178162
-Country of Origin ‏ : ‎ India
-Manufacturer ‏ : ‎ Nutricia International Pvt Ltd., Nutricia International Private Limited, Pheonix Market City, Centrium Gate 1, Level 3, Office No. 1, LBS Marg, Kurla (W), Mumbai-400070, Tel : +91 22 66696740
-Packer ‏ : ‎ Nutricia International Private Limited, Pheonix Market City, Centrium Gate 1, Level 3, Office No. 1, LBS Marg, Kurla (W), Mumbai-400070, Tel : +91 22 66696740
-Item Weight ‏ : ‎ 200 g
-Item Dimensions LxWxH ‏ : ‎ 35 x 150 x 180 Millimeters
-Net Quantity ‏ : ‎ 200.0 gram
-Included Components ‏ : ‎ 1 pack of Protinex Diabetes Care
-Generic Name ‏ : ‎ Nutrition Drink
-Best Sellers Rank: #305 in Health & Personal Care (See Top 100 in Health & Personal Care)`    
+        id: 3,
+        tab: 'Specification',
+        prdct_dmnsion: '3.5 x 15 x 18 cm; 200 g',
+        date_fst_avail: '26 August 2021',
+        Manufacturer_1: 'Nutricia International Pvt Ltd.',
+        asin: 'B09DQLLV9Q',
+        Item_part_number: 178162,
+        cntry_of_orgn: 'India',
+        Manufacturer_2: 'Nutricia International Pvt Ltd., Nutricia International Private Limited, Pheonix Market City, Centrium Gate 1, Level 3, Office No. 1, LBS Marg, Kurla (W), Mumbai-400070, Tel : +91 22 66696740',
+        Packer: 'Nutricia International Private Limited, Pheonix Market City, Centrium Gate 1, Level 3, Office No. 1, LBS Marg, Kurla (W), Mumbai-400070, Tel : +91 22 66696740',
+        Item_weight: '200 g',
+        itm_dmsn: '35 x 150 x 180 Millimeters',
+        net_qnty: '200.0 gram',
+        inclded_cmpnts: '1 pack of Protinex Diabetes Care',
+        genrc_name: 'Nutrition Drink',
+        rank: '#305 in Health & Personal Care (See Top 100 in Health & Personal Care)'
+    },
+    {
+        id: 4,
+        tab: 'Review',
+
     }
 ]
 
@@ -873,4 +906,46 @@ export const similarProducts = [
         new_price: 212,
         discount: ''
     },
+]
+
+
+export const cart_box = [
+    {
+        cart_img: cart_image_1,
+        item_name: "Protinex Mother’s Drink with DHA, Vitamins & Protein ",
+        price: 750,
+    },
+    {
+        cart_img: cart_image_2,
+        item_name: 'Nisarga Herbs Imutizer Syrup',
+        price: 700,
+    },
+]
+
+export const breadcrum_cntnt = [
+    {
+        brdcrum_txt: 'Cart',
+    },
+    {
+        brdcrum_txt: 'checkout'
+    },
+]
+
+export const payment_checkout =[
+    {
+        pay: pay_1,
+        img_txt: 'Cash on Delivery',
+    },
+    {
+       pay: pay_2,
+       img_txt: 'Paypal',
+    },
+    {
+       pay:  pay_3,
+       img_txt: 'Amazon Pay',
+    },
+    {
+        pay: pay_4,
+        img_txt: 'Debid/Credit Card',
+    }
 ]

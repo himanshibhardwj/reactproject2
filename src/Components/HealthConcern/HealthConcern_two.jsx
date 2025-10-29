@@ -54,7 +54,7 @@ const HealthConcern_two = () => {
                         className="mySwiper"
                     >
 
-                        {health_concern.slice(6, 14).map((item, index) => {
+                        {health_concern.slice(6, 12).map((item, index) => {
                             return (<SwiperSlide className=' h-full' ><Items key={index} id={item.id} image={item.image} title={item.title} /></SwiperSlide>)
                         })}
 

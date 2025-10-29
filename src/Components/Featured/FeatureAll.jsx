@@ -21,7 +21,7 @@ const FeatureAll = () => {
             <div className='mt-40'>
                 <div className='container_box nnt '>
                     <div className='mb-5 flex items-center justify-between'><Header title={heading[0].title} />
-                        <div className='view_all cursor-pointer'><Link><ViewAll /></Link></div>
+                        <div className='view_all cursor-pointer'><Link to={'/ourproducts'}><ViewAll /></Link></div>
                     </div>
                     <Swiper
                         breakpoints={{

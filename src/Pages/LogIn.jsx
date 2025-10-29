@@ -20,7 +20,7 @@ const LogIn = () => {
                                 <div className='flex gap-5'>
                                     <div className='flex items-center gap-2 w-2/12 border-1 border-[#D8E0F0] p-3 justify-center rounded-md'>
                                         <span>+91</span>
-                                        <span><FaChevronDown /></span>
+                                        <span className='cursor-pointer'><FaChevronDown /></span>
                                     </div>
                                     <div className='w-10/12 border-1 border-[#D8E0F0] py-2 px-3 rounded-md'>
                                         <input type='text' className='w-full h-full outline-none' placeholder='345 567-23-56' />

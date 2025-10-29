@@ -12,7 +12,7 @@ const MobileVerification = () => {
                     <div className='flex flex-col gap-3 pt-4'>
                         <div className='flex justify-between'>
                             <span>Verification Code</span>
-                            <span className='text-[#2DA5F3]'>Resend Code</span>
+                            <span className='text-[#2DA5F3] cursor-pointer'>Resend Code</span>
                         </div>
                         <div className='w-full border-1 border-[#E4E7E9] py-2 px-2'>
                             <input type='text' className='outline-none w-full h-full' />

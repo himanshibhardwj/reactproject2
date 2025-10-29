@@ -11,6 +11,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 
 
 
@@ -20,7 +21,7 @@ const SkinCareProducts = () => {
             <div className='mt-20 '>
                 <div className='container_box nnt '>
                     <div className='mb-5 flex items-center justify-between'><Header title={heading[4].title} />
-                        <div className='view_all'><ViewAll /></div>
+                        <div className='view_all'><Link to={'/ourproducts'}><ViewAll /></Link></div>
                     </div>
                     <Swiper
                         breakpoints={{
@@ -61,8 +62,6 @@ const SkinCareProducts = () => {
                         {featured_Products.slice(18, 28).map((item, index) => {
                             return (<SwiperSlide className=' h-full' ><ItemsSlider key={index} id={item.id} image={item.image} name={item.name} deliver_time={item.deliver_time} time={item.time} star_content={item.star_content} old_price={item.old_price} new_price={item.new_price} discount={item.discount} /></SwiperSlide>)
                         })}
-
-
                     </Swiper>
                 </div>
             </div>

@@ -12,6 +12,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 
 const TrendingNow = () => {
     return (
@@ -19,7 +20,7 @@ const TrendingNow = () => {
             <div className='mt-20 '>
                 <div className='container_box nnt '>
                     <div className='mb-5 flex items-center justify-between'><Header title={heading[3].title} />
-                        <div className='view_all'><ViewAll /></div>
+                        <div className='view_all'><Link to={'/ourproducts'}><ViewAll /></Link></div>
                     </div>
                     <Swiper
                         breakpoints={{

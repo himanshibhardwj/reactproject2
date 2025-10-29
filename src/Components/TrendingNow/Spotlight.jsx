@@ -13,6 +13,7 @@ import { Pagination } from 'swiper/modules';
 import Header from '../Header/Header';
 import ViewAll from '../Featured/ViewAll';
 import ItemsSlider from '../ItemsSlider';
+import { Link } from 'react-router-dom';
 
 
 const Spotlight = () => {
@@ -21,7 +22,7 @@ const Spotlight = () => {
             <div className='mt-20 '>
                 <div className='container_box nnt '>
                     <div className='mb-5 flex items-center justify-between'><Header title={heading[6].title} />
-                        <div className='view_all'><ViewAll /></div>
+                        <div className='view_all'><Link to={'/ourproducts'}><ViewAll /></Link></div>
                     </div>
                     <Swiper
                         breakpoints={{

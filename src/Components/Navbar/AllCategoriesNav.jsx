@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const AllCategoriesNav = ({openCat}) => {
     return (
         openCat && (
-        <div className='w-[300px] h-[200px] bg-white scroll overflow-y-scroll bg-white rounded-md absolute top-15 left-0 z-100 p-2 border-1 border-[rgba(0,0,0,0.3)]'>
+        <div className='w-[300px] h-[200px] bg-white scroll overflow-y-scroll bg-white rounded-md absolute top-15 left-0 z-100 p-2 all_ctegry_cntainer border-1 border-[rgba(0,0,0,0.3)]'>
             <ul className='flex flex-col gap-3'>
                 <li className='hover:bg-indigo-100 p-1'><Link>Health Resource Center</Link></li>
                 <li className='hover:bg-indigo-100 p-1'><Link>Winter Care Essentials</Link></li>

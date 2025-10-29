@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom'
 const LoginSignup = () => {
     const [isLogin, setIsLogin] = useState(0)
     return (
-        <div className='mt-20 flex justify-center'>
-            <div className='shadow-md w-[50%]  justify-center items-center drop-shadow-md'>
+        <div className='mt-20 flex justify-center login_signup_container'>
+            <div className='shadow-md w-[50%] login_signup_form justify-center items-center drop-shadow-md'>
                 <div className=''>
                     <div className='flex'>
-                        <div className={`w-2/4 text-center text-lg  py-2 ${isLogin === 0 ? 'text-[#191C1F] border-b-2 border-[#0070BC]' : 'text-[#77878F]'}`} onClick={() => { setIsLogin(0) }}>
+                        <div className={`w-2/4 text-center py-2 ${isLogin === 0 ? 'text-[#191C1F] login_butn border-b-2 border-[#0070BC]' : 'text-[#77878F]'}`} onClick={() => { setIsLogin(0) }}>
                             <button className='cursor-pointer'>Log In</button>
                         </div>
-                        <div className={`w-2/4 text-center text-lg py-2 ${isLogin === 1 ? 'text-[#191C1F] border-b-2 border-[#0070BC]' : 'text-[#77878F]'}`} onClick={() => { setIsLogin(1) }}>
+                        <div className={`w-2/4 sigup_butn text-center py-2  ${isLogin === 1 ? 'text-[#191C1F] signup_butn border-b-2 border-[#0070BC]' : 'text-[#77878F]'}`} onClick={() => { setIsLogin(1) }}>
                             <button className='cursor-pointer'>Sign Up</button>
                         </div>
                     </div>
@@ -23,14 +23,14 @@ const LoginSignup = () => {
                                 <div className='flex flex-col gap-3'>
                                     <label>Enter Mobile Number</label>
                                     <div className='w-full border border-[#E4E7E9] rounded-md'>
-                                        <input type='text' className='outline-none py-2 px-2' />
+                                        <input type='text' className='outline-none w-full py-2 px-2' />
                                     </div>
-                                    <div className='flex justify-end'>
+                                    <div className='already_acnt flex justify-end'>
                                         <p>Already have an Account? <Link to={'/loginsignup'}><span className='text-[#2DA5F3]'>Sign Up</span></Link></p>
                                     </div>
                                 </div>
                                 <div className='flex justify-center'>
-                                    <div className='flex justify-center items-center gap-3 bg-[#0070BC] text-white w-25 py-2 rounded-md'>
+                                    <div className='flex justify-center items-center gap-3 bg-[#0070BC] text-white w-25 py-2 rounded-md signup_butn'>
                                         <button>Sign Up</button>
                                         <span><FaArrowRight /></span>
                                     </div>
@@ -46,14 +46,14 @@ const LoginSignup = () => {
                                 <div className='flex flex-col gap-3'>
                                     <label>Enter Mobile Number</label>
                                     <div className='w-full border border-[#E4E7E9] rounded-md'>
-                                        <input type='text' className='outline-none py-2 px-2' />
+                                        <input type='text' className='outline-none w-full py-2 px-2' />
                                     </div>
-                                    <div className='flex justify-end'>
+                                    <div className='flex'>
                                         <p>Already have an Account? <Link to={'/login'}><span className='text-[#2DA5F3]'>Log In</span></Link></p>
                                     </div>
                                 </div>
                                 <div className='flex justify-center'>
-                                    <div className='flex justify-center items-center gap-3 bg-[#0070BC] text-white w-25 py-2 rounded-md'>
+                                    <div className='flex justify-center items-center gap-3 bg-[#0070BC] signup_butn text-white w-25 py-2 rounded-md'>
                                         <button>Log in</button>
                                         <span><FaArrowRight /></span>
                                     </div>

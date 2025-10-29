@@ -36,7 +36,7 @@ const Navbar3 = ({ openMenuNav }) => {
   return (
     <>
       <div className='py-[18px] px-4 category_nav_1 bg-[#EDF4F6]'>
-        <div className=' flex cat_nav_items gap-10  justify-center'>
+        <div className=' flex cat_nav_items gap-18  justify-center'>
           {nav_itm.map((item, index) => {
             return (
               <div key={index} onClick={()=>{setActiveBorder(item.title)}}>
@@ -58,7 +58,7 @@ const Navbar3 = ({ openMenuNav }) => {
                 </Link>
               </div>
             </div>
-            <div className='w-full overflow-scroll h-[300px]'>
+            <div className='w-full nav_hanburgr_ctegry'>
               {nav_itm.map((item, index) => {
                 return (
                   <div key={index} className={'bg-indigo-200 w-full p-2  '}>

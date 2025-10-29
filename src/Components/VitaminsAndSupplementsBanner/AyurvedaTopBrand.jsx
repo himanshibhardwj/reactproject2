@@ -13,8 +13,8 @@ const AyurvedaTopBrand = () => {
     const displayBrands = health_concern.slice(12, 23)
     return (
 
-        <div className='mt-20 h-[407px] bg-[#0070BC1A] ayurveda_container '>
-            <div className='container_box nnt h-full'>
+        <div className='mt-20 pb-10 bg-[#0070BC1A] ayurveda_container '>
+            <div className='container_box nnt'>
                 <div className='pt-20 ayurved_top'>
                     <div>
                         <Header title={heading[7].title} />
@@ -56,7 +56,7 @@ const AyurvedaTopBrand = () => {
                     >
 
                         {health_concern.slice(12, 20).map((item, index) => {
-                            return (<SwiperSlide className=' h-full' ><Items key={index} id={item.id} image={item.image} title={item.title} /></SwiperSlide>)
+                            return (<SwiperSlide><Items key={index} id={item.id} image={item.image} title={item.title} /></SwiperSlide>)
                         })}
                     </Swiper>
                 </div>

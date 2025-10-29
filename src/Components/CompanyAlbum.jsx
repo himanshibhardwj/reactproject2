@@ -7,16 +7,18 @@ import Items from './Items';
 
 
 const CompanyAlbum = () => {
-  const health = health_concern.slice(18, 24)
   return (
     <div className='container_box'>
-      <div className='mt-5'>
+      <div className='mt-5 header'>
         <Header title={heading[10].title} />
         <div className='flex items-center justify-between'>
-            <Items/>
+          <Items />
         </div>
       </div>
-      <div>
+      <div className='cmpny_album flex justify-between'>
+        {health_concern.slice(18,22).map((item, index) => {
+          return (<Items key={index} image={item.image} title={item.title} />)
+        })}
       </div>
     </div>
   )
