@@ -972,15 +972,93 @@ export const dashboard_tabs =[
         tab: 'Return/Refund '
     },
     {
-        img: wishlist,
-        tab: 'Wishlist'
+        img: account_details,
+        tab: 'Account details'
     },
     {
         img: account_details,
-        tab: 'Account details'
+        tab: 'Change Password'
     },
     {
         img: logout,
         tab: 'Log-out'
     },
+]
+
+import rocket from '../assets/Home/DashboardImages/Rocket.png'
+import package_img from '../assets/Home/DashboardImages/Package.png'
+import receipt from '../assets/Home/DashboardImages/Receipt.png'
+
+export const dashboard_button = [
+    {
+        id: 1,
+        btn_img : rocket,
+        order_txt: 'Total Orders',
+        order_num: 154,
+    },
+    {
+        id: 2,
+        btn_img : receipt,
+        order_txt: 'Pending Orders',
+        order_num: 5,
+    },
+    {
+        id: 3,
+        btn_img : package_img,
+        order_txt: 'Completed Orders',
+        order_num: 54,
+    },
+    {
+        id: 4,
+        btn_img : package_img,
+        order_txt: 'My Cart',
+        order_num: 9,
+    }
+]
+
+
+export const address_cntent =[
+    {
+        hdng_1 : 'Sarthak Tyagi',
+        address: '12th Main, Indiranagar,Noida Opposite Café Coffee Day Uttar Pradesh India'
+    },
+    {
+        hdng_1 : 'Testing123456',
+        address: '12th Main, Indiranagar,Noida Opposite Café Coffee Day Uttar Pradesh India'
+    },
+    {
+        hdng_1 : 'Testing',
+        address: 'Marvela, 724, 11th Road, Khar West Opposite Café Coffee Day Mumbai India'
+    },
+    {
+        hdng_1 : 'Testing',
+        address: '2nd Floor, Nav Bhavna Building Opposite Café Coffee Day Mumbai India'
+    },
+]
+
+export const order_cntnt = [
+    {
+        id: 149,
+        status: 'pending',
+        price: 1800,
+        date: '10/16/2025',
+    },
+    {
+        id: 142,
+        status: 'pending',
+        price: 1800,
+        date: '10/13/2025',
+    },
+    {
+        id: 143,
+        status: 'pending',
+        price: 1800,
+        date:' 10/8/2025',
+    },
+    {
+        id: 147,
+        status: 'pending',
+        price: 1800,
+        date:' 10/6/2025',
+    }
 ]
