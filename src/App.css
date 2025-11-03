@@ -355,6 +355,15 @@ input::file-selector-button {
     width: 50%;
 }
 
+.vw_imge {
+    width: 100%;
+    max-width: 80%;
+}
+
+.view_img{
+    width: 100%;
+    max-width: 9%;
+}
 @media screen and (max-width: 1600px) {
     .home_box_1 p {
         font-size: 18px;
@@ -2290,7 +2299,7 @@ input::file-selector-button {
     }
 
     .cty_adress select {
-        font-size: 10px!important;
+        font-size: 10px !important;
     }
 }
 
