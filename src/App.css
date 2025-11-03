@@ -261,16 +261,17 @@ ul.breadcrumb li {
     height: 20px;
     border-radius: 50%;
 }
-.cart_smry_image{
+
+.cart_smry_image {
     width: 100%;
     max-width: 20%;
 }
 
-.cart_smry_image img{
+.cart_smry_image img {
     width: 100%;
 }
 
-.wishlist_icn{
+.wishlist_icn {
     width: 30px;
     height: 30px;
     background-color: white;
@@ -280,25 +281,79 @@ ul.breadcrumb li {
     justify-content: center;
 }
 
-.img_dshbrd_active{
+.img_dshbrd_active {
     backdrop-filter: invert(1) brightness(8.5);
 }
 
 
 
 .modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
 }
 
+.user_dshbrd {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.user_dshbrd_img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.user_dshbrd img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 100%;
+}
+
+input[type="file"] {
+    width: 100%;
+    height: 100%;
+    color: white;
+    opacity: 0;
+}
+
+input::file-selector-button {
+    height: 100% !important;
+}
+
+.preview_image {
+    width: 100%;
+    height: 150px;
+}
+
+.preview_image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.vew_ordr_image {
+    width: 100%;
+    max-width: 10%;
+}
+
+.vew_ordr_image img {
+    width: 100%;
+    height: 100%;
+}
+
+.track_cancel_box {
+    width: 50%;
+}
 
 @media screen and (max-width: 1600px) {
     .home_box_1 p {
@@ -397,6 +452,10 @@ ul.breadcrumb li {
         font-size: 15px;
         padding: 5px 0px;
     }
+
+    .accunt_dtls_form {
+        width: 80%;
+    }
 }
 
 
@@ -426,8 +485,6 @@ ul.breadcrumb li {
     .subscribe_btn {
         width: 35%;
     }
-
-
 
     .newsletter_serch span {
         right: 34px;
@@ -469,11 +526,6 @@ ul.breadcrumb li {
         width: 32%;
     }
 
-    /* .addtnl_info p span{
-        width: 100%;
-        max-width: 30%;
-    } */
-
     .swiper-button-next svg {
         width: 50px;
         height: 50px;
@@ -514,6 +566,63 @@ ul.breadcrumb li {
     .cart_total h4 {
         font-size: 18px;
     }
+
+    .dashbrd_tabs button {
+        font-size: 14px;
+    }
+
+    .dashbrd_name_data h4 {
+        font-size: 15px;
+    }
+
+    .dashbrd_name_data .email {
+        font-size: 14px;
+    }
+
+    .dashbrd_name_data .phone {
+        font-size: 13px;
+    }
+
+    .dshbrd_btn button {
+        font-size: 13px;
+    }
+
+    .dashbrd_two_cntnt p {
+        font-size: 15px;
+    }
+
+    .dashbrd_two_hdng p {
+        font-size: 25px;
+    }
+
+    .dashbrd_fr ul li {
+        font-size: 14px;
+    }
+
+    .view_prdct span {
+        font-size: 14px;
+    }
+
+    .downld_prdct {
+        font-size: 14px;
+    }
+
+    .track_cancel button {
+        font-size: 13px;
+    }
+
+    .track_cancel_box button {
+        font-size: 13px;
+    }
+
+    .track_cancel_box {
+        font-size: 15px;
+    }
+
+    .breadcrumb li {
+        font-size: 14px;
+    }
+
 }
 
 
@@ -724,6 +833,112 @@ ul.breadcrumb li {
         font-size: 13px;
     }
 
+    .dshbrd_ryt_box span {
+        font-size: 15px;
+    }
+
+    .breadcrumb li {
+        font-size: 14px;
+    }
+
+    .dashbrd_two_cntnt p {
+        font-size: 13px;
+    }
+
+    .dashbrd_two_lists li {
+        font-size: 12px;
+    }
+
+    .dashbrd_two_hdng p {
+        font-size: 22px;
+    }
+
+    .dashbrd_two_hdng select {
+        font-size: 12px;
+        width: 16%;
+        padding: 5px 3px;
+    }
+
+    .add_addrss button {
+        font-size: 12px;
+    }
+
+    .bling_addrss {
+        font-size: 11px;
+    }
+
+    .opn_clse svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .name_address span,
+    p {
+        font-size: 12px;
+    }
+
+    .view_prdct span {
+        font-size: 12px;
+    }
+
+    .downld_prdct {
+        font-size: 12px;
+    }
+
+    .dashbrd_fr ul li {
+        font-size: 12px;
+    }
+
+    .dshbrd_accnt_detls label {
+        font-size: 13px;
+    }
+
+    .dshbrd_accnt_detls input {
+        font-size: 12px;
+    }
+
+    .sve_chnges {
+        font-size: 13px;
+        width: 20%;
+        padding: 5px 0px;
+    }
+
+    .dashbrd_tabs button {
+        font-size: 13px;
+    }
+
+    .cty_adress select {
+        font-size: 12px !important;
+    }
+
+    .ldmrk_adress select {
+        font-size: 12px !important;
+    }
+
+    .close_sve_modal button {
+        font-size: 13px;
+    }
+
+    .cty_adress select option {
+        font-size: 12px !important;
+    }
+
+    .modal-content input {
+        font-size: 12px;
+    }
+
+    .modal_cntnt {
+        width: 50%;
+    }
+
+    .vew_ordr_image {
+        width: 100%;
+        max-width: 11%;
+    }
+
+    .sve_chnges_pssword {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -924,12 +1139,37 @@ ul.breadcrumb li {
         width: 65%;
         padding: 3px 5px;
     }
+
+    .dashbrd_name_data {
+        width: 60%;
+    }
+
+    .modal_cntnt {
+        width: 54%;
+    }
+
+    .modal-content label {
+        font-size: 13px;
+    }
+
+    .accunt_dtls_form {
+        width: 70%;
+    }
+
+    .sve_chnges {
+        width: 30%;
+    }
+
 }
 
 @media screen and (max-width: 991px) {
     .hero_left_box {
         width: 100%;
         max-width: 100%;
+    }
+
+    .profile_cntner {
+        gap: 10px;
     }
 
     .box {
@@ -1066,6 +1306,16 @@ ul.breadcrumb li {
     .cart_right_box {
         width: 100%;
     }
+
+    .vew_ordr_image {
+        width: 100%;
+        max-width: 13%;
+    }
+
+    .user_dshbrd_img {
+        margin-top: 10px;
+    }
+
 }
 
 
@@ -1114,6 +1364,19 @@ ul.breadcrumb li {
 
     .all_ctegry_cntainer ul li {
         font-size: 12px;
+    }
+
+    .dashbrd_tabs button {
+        font-size: 10px;
+    }
+
+    .vew_ordr_image {
+        width: 100%;
+        max-width: 9%;
+    }
+
+    .dshbrd_two_image {
+        max-width: 23%;
     }
 }
 
@@ -1173,7 +1436,140 @@ ul.breadcrumb li {
         font-size: 11px;
     }
 
+    .dashbrd_tabs button {
+        font-size: 9px;
+    }
 
+    .dashbrd_tabs span {
+        font-size: 13px;
+    }
+
+    .dashbrd_name_data h4 {
+        font-size: 14px;
+    }
+
+    .dashbrd_name_data .email {
+        font-size: 12px;
+    }
+
+    .dashbrd_name_data .phone {
+        font-size: 12px;
+    }
+
+    .dshbrd_btn button {
+        font-size: 10px;
+        padding: 3px 0px;
+        width: 100%;
+    }
+
+    .dshbrd_ryt_box img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .dshbrd_ryt_box span {
+        font-size: 13px;
+    }
+
+    .name_address span,
+    p {
+        font-size: 10px;
+    }
+
+    .bling_addrss {
+        font-size: 10px;
+    }
+
+    .add_addrss button {
+        font-size: 11px;
+        padding: 4px 0px;
+    }
+
+    .dashbrd_two_hdng select {
+        font-size: 10px;
+        width: 23%;
+        padding: 4px 3px;
+    }
+
+    .dashbrd_two_hdng select option {
+        font-size: 10px;
+    }
+
+    .view_prdct span {
+        font-size: 10px;
+    }
+
+    .view_prdct {
+        padding: 3px 0px;
+    }
+
+    .downld_prdct {
+        font-size: 10px;
+    }
+
+    .track_cancel button {
+        font-size: 10px;
+        padding: 3px 4px;
+    }
+
+    .track_cancel_box button {
+        font-size: 10px;
+    }
+
+    .dashbrd_fr ul li {
+        font-size: 10px;
+    }
+
+    .dshbrd_accnt_detls label {
+        font-size: 11px;
+    }
+
+    .dshbrd_accnt_detls input {
+        font-size: 11px;
+    }
+
+    .sve_chnges {
+        font-size: 13px;
+        width: 40%;
+        padding: 5px 0px;
+    }
+
+    .modal-content input {
+        font-size: 10px;
+    }
+
+    .modal_hdng {
+        font-size: 12px;
+    }
+
+    .close_sve_modal button {
+        font-size: 10px;
+    }
+
+    .modal_cntnt {
+        width: 57%;
+    }
+
+    .modal-content label {
+        font-size: 12px;
+    }
+
+    .dashbrd_two_hdng select {
+        width: 30%;
+    }
+
+    .vew_ordr_image {
+        width: 100%;
+        max-width: 12%;
+    }
+
+    .profile_cntner {
+        flex-direction: column;
+    }
+
+    .accunt_dtls_form {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -1285,6 +1681,69 @@ ul.breadcrumb li {
         width: 25%;
     }
 
+    .dashboard_cntner {
+        flex-direction: column;
+    }
+
+    .dashbrd_ryt_cntaner {
+        width: 100%;
+    }
+
+    .dashbrd_left_cntaner {
+        width: 100%;
+    }
+
+    .dashbrd_tabs button {
+        font-size: 12px;
+    }
+
+    .name_address span,
+    p {
+        font-size: 13px;
+    }
+
+    .dashbrd_name_data h4 {
+        font-size: 16px;
+    }
+
+    .dashbrd_name_data .email {
+        font-size: 15px;
+    }
+
+    .dashbrd_name_data .phone {
+        font-size: 14px;
+    }
+
+    .dshbrd_btn button {
+        font-size: 13px;
+        padding: 3px 0px;
+        width: 100%;
+    }
+
+    .breadcrumb li {
+        font-size: 12px;
+    }
+
+    .modal-content label {
+        font-size: 11px;
+    }
+
+    .modal_cntnt {
+        width: 64%;
+    }
+
+    .sve_chnges {
+        width: 50%;
+    }
+
+    .orders_retrn {
+        width: 100%;
+    }
+
+    .dashbrd_tabs svg {
+        width: 18px;
+        height: 18px;
+    }
 }
 
 
@@ -1382,6 +1841,25 @@ ul.breadcrumb li {
     .continue_shppng {
         width: 30%;
     }
+
+
+    .modal_hdng {
+        font-size: 10px;
+    }
+
+    .name_address span,
+    p {
+        font-size: 11px;
+    }
+
+    .modal_cntnt {
+        width: 70%;
+    }
+
+    .dshbrd_two_image {
+        max-width: 23%;
+    }
+
 }
 
 
@@ -1643,6 +2121,71 @@ ul.breadcrumb li {
     .continue_shppng {
         width: 50%;
     }
+
+    .dashbrd_name_data {
+        width: 50%;
+    }
+
+    .dashbrd_name_data .email {
+        font-size: 13px;
+    }
+
+    .dashbrd_name_data .phone {
+        font-size: 12px;
+    }
+
+    .dshbrd_btn button {
+        font-size: 11px;
+        padding: 3px 0px;
+    }
+
+    .dshbrd_ryt_box p {
+        font-size: 12px;
+    }
+
+    .modal_close_icn svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .add_addrss button {
+        font-size: 9px;
+    }
+
+    .plus_icn_addrss {
+        width: 30px;
+        height: 30px;
+    }
+
+    .plus_icn_addrss svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .footr_logo {
+        width: 100%;
+        max-width: 47%;
+    }
+
+    .dshbrd_addrses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .modal_cntnt {
+        width: 73%;
+    }
+
+    .dshbrd_passwrd {
+        width: 100%;
+    }
+
+    .sve_chnges {
+        width: 60%;
+    }
+
+    .dshbrd_two_image {
+        max-width: 31%;
+    }
 }
 
 
@@ -1669,8 +2212,6 @@ ul.breadcrumb li {
         font-size: 12px;
     }
 
-
-
     .newsletter_policy p {
         font-size: 8px;
     }
@@ -1696,8 +2237,60 @@ ul.breadcrumb li {
     .nwsltter_subscribe_btn {
         width: 40%;
     }
+
     .newltter_sarch input {
         font-size: 9px;
+    }
+
+    .dashbrd_name_data {
+        width: 40%;
+    }
+
+    .dshbrd_ryt_box {
+        padding: 12px 8px;
+    }
+
+    .user_dshbrd {
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+    }
+
+    .dashbrd_name_data .phone {
+        font-size: 10px;
+    }
+
+    .modal-content {
+        padding: 12px 9px;
+    }
+
+    .modal_cntnt {
+        width: 80%;
+    }
+
+    .modal-content input {
+        font-size: 9px;
+    }
+
+    .ldmrk_adress select {
+        font-size: 10px !important;
+    }
+
+    .sve_chnges {
+        width: 75%;
+    }
+
+    .dshbrd_two_image {
+        max-width: 31%;
+    }
+
+    .sve_chnges_pssword {
+        width: 40%;
+        font-size: 11px;
+    }
+
+    .cty_adress select {
+        font-size: 10px!important;
     }
 }
 
@@ -1875,7 +2468,90 @@ ul.breadcrumb li {
     .nwsltter_subscribe_btn input {
         padding-left: 8px;
     }
-   
+
+    .dshbrd_ryt_box {
+        padding: 6px 8px;
+    }
+
+    .dshbrd_ryt_box p {
+        font-size: 9px;
+    }
+
+    .dshbrd_btn button {
+        font-size: 9px;
+        padding: 4px 0px;
+    }
+
+    .dashbrd_name_data .phone {
+        font-size: 12px;
+    }
+
+    .dashbrd_name_data .email {
+        font-size: 11px;
+    }
+
+    .dshbrd_btn {
+        width: 20%;
+    }
+
+    .dashbrd_name_data {
+        width: 43%;
+    }
+
+    .dashbrd_name_data h4 {
+        font-size: 12px;
+    }
+
+    .breadcrumb li {
+        font-size: 10px;
+    }
+
+    .breadcrumb {
+        padding: 11px 19px;
+    }
+
+
+    .opn_clse svg {
+        width: 13px;
+        height: 13px;
+    }
+
+    .sve_chnges {
+        width: 50%;
+    }
+
+    .dshbrd_passwrd {
+        font-size: 14px;
+    }
+
+    .dshbrd_passwrd h3 {
+        font-size: 13px;
+    }
+
+    .sve_chnges {
+        font-size: 11px;
+    }
+
+    .orders_list {
+        width: 50%;
+    }
+
+    .dashbrd_two_hdng select {
+        width: 37%;
+    }
+
+    .vew_ordr_image {
+        width: 100%;
+        max-width: 17%;
+    }
+
+    .dashbrd_two_cntnt p {
+        font-size: 11px;
+    }
+
+    .dashbrd_two_lists li {
+        font-size: 10px;
+    }
 }
 
 
@@ -1918,8 +2594,13 @@ ul.breadcrumb li {
     .nwsltter_subscribe_btn input {
         padding-left: 5px;
     }
-     .newltter_sarch input {
+
+    .newltter_sarch input {
         font-size: 7px;
+    }
+
+    .dashbrd_name_data .email {
+        font-size: 10px;
     }
 
 }

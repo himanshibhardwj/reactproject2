@@ -4,13 +4,13 @@ import proteinX from '../assets/Home/Similar_Products/proteinX_1.png'
 const DashboardOrdersRight = () => {
   return (
     <div>
-      <div className='flex gap-5 mt-4 border-1 rounded border-[#D2D2D2]'>
-        <div className='w-full max-w-[20%] h-full'>
+      <div className='flex gap-5 mt-4 border-1 rounded border-[#D2D2D2] dashbrd_two_cntnt'>
+        <div className='w-full max-w-[20%] h-full dshbrd_two_image'>
           <img src={proteinX} className='w-full' />
         </div>
         <div className='w-6/12 flex flex-col justify-center gap-2 mt-2 mb-2'>
           <p className='text-[15px] text-[#191C1F] font-semibold'>Protinex High Quality Protein | Nutritional Drink for Immunity & Strength</p>
-          <ul className='flex flex-wrap gap-2'>
+          <ul className='flex flex-wrap gap-2 dashbrd_two_lists'>
             <li className='w-5/12 text-sm font-semibold'>Delivered on :</li>
             <li className='w-5/12 text-sm '>9/29/2025</li>
             <li className='w-5/12 text-sm font-semibold'>Status :</li>

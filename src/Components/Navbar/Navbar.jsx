@@ -16,6 +16,7 @@ import { FaChevronDown } from 'react-icons/fa6'
 
 
 const Navbar = () => {
+
   const [openMenu, setOpenMenu] = useState(false);
   const [openCategories, setOpenCategories] = useState(false);
   const [openLanguage, setOpenLanguage] = useState(false);
@@ -57,18 +58,15 @@ const Navbar = () => {
                     )
                     }
                   </div>
-                  <Link>
-                    <div>
-                      <Link to={'/loginsignup'}>Login/Register</Link>
-                    </div></Link>
-                  <Link to={'/dashboard'}>
-                    <div className='flex  items-center gap-2 py-3'>
-                      <span className='icon_clr1'>
-                        <Link to={'/dashboard'}><FaRegUser size={17} /></Link>
-                      </span>
-                      <span className='text-[12px] my_account 2xl:text-[14px] xl:text-[13px] md:text-[12px] lg:text-[13px] font-bold'> <Link to={'/dashboard'}>My account</Link></span>
-                    </div>
-                  </Link>
+                  <div>
+                    <Link to={'/loginsignup'}>Login/Register</Link>
+                  </div>
+                  <div className='flex  items-center gap-2 py-3'>
+                    <span className='icon_clr1'>
+                      <Link to={'/dashboard'}><FaRegUser size={17} /></Link>
+                    </span>
+                    <span className='text-[12px] my_account 2xl:text-[14px] xl:text-[13px] md:text-[12px] lg:text-[13px] font-bold'> <Link to={'/dashboard'}>My account</Link></span>
+                  </div>
                 </div>
               </div>
             </div>

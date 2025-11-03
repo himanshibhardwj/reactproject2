@@ -102,6 +102,10 @@ import logout from '../assets/Home/DashboardImages/logout.png'
 import stack from '../assets/Home/DashboardImages/Stack.png'
 
 
+import rocket from '../assets/Home/DashboardImages/Rocket.png'
+import package_img from '../assets/Home/DashboardImages/Package.png'
+import receipt from '../assets/Home/DashboardImages/Receipt.png'
+
 export const heading = [
     {
         title: 'Featured Products'
@@ -954,40 +958,6 @@ export const payment_checkout =[
         img_txt: 'Debid/Credit Card',
     }
 ]
-export const dashboard_tabs =[
-    {
-        img: stack,
-        tab: 'Dashboard'
-    },
-    {
-        img: order,
-        tab: 'Order'
-    },
-    {
-        img: location,
-        tab: 'Addresses'
-    },
-    {
-        img: return_refund,
-        tab: 'Return/Refund '
-    },
-    {
-        img: account_details,
-        tab: 'Account details'
-    },
-    {
-        img: account_details,
-        tab: 'Change Password'
-    },
-    {
-        img: logout,
-        tab: 'Log-out'
-    },
-]
-
-import rocket from '../assets/Home/DashboardImages/Rocket.png'
-import package_img from '../assets/Home/DashboardImages/Package.png'
-import receipt from '../assets/Home/DashboardImages/Receipt.png'
 
 export const dashboard_button = [
     {
@@ -1062,3 +1032,4 @@ export const order_cntnt = [
         date:' 10/6/2025',
     }
 ]
+
