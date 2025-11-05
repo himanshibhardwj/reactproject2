@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const CartBreadcrum = () => {
   return (
-    <div className='mt-5 bg-[#F2F4F5] py-3'>
-        <ul className='breadcrumb flex'>
-          <li>Home</li>
-          <li></li>
-        </ul>
+    <div className='bg-[#F2F4F5] px-20 py-2 mt-2'>
+      <ul className='breadcrumb flex'>
+        <li><Link to={'/'}>Home</Link></li>
+        <li className='text-[#DB3030]'>{brdcrmName}</li>
+      </ul>
     </div>
   )
 }

@@ -15,6 +15,7 @@ import Wishlist from './Pages/Wishlist'
 import Cart from './Pages/Cart'
 import CheckOut from './Pages/CheckOut'
 import Dashboard from './Pages/Dashboard'
+import EditProfile from './Components/EditProfile'
 
 function App() {
 
@@ -27,18 +28,19 @@ function App() {
         <Route path='/loginsignup' element={<LoginSignup />} />
         <Route path='/productview' element={<ProductView />} />
         <Route path='/productdetailspage' element={<ProductDetailsPage />} />
-        <Route path='/ourproducts' element={<OurProduct/>} />
+        <Route path='/ourproducts' element={<OurProduct />} />
         <Route path='/contactus' element={<ContactUs />} />
         <Route path='/loginsignup' element={<LoginSignup />} />
         <Route path='/login' element={<LogIn />} />
         <Route path='/mobileverification' element={<MobileVerification />} />
-        <Route path='/wishlist' element={<Wishlist/>}/>
-        <Route path='/cart' element={<Cart/>}/>
-        <Route path='/checkout' element={<CheckOut/>}/>
-        <Route path='/dashboard' element={<Dashboard/>}/>
+        <Route path='/wishlist' element={<Wishlist />} />
+        <Route path='/cart' element={<Cart />} />
+        <Route path='/checkout' element={<CheckOut />} />
+        <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/editprofile' element={<EditProfile />} />
       </Routes>
       <div className='mt-10'>
-      <Footer />
+        <Footer />
       </div>
     </BrowserRouter>
   )

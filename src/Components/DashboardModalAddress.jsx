@@ -15,24 +15,28 @@ const DashboardModalAddress = ({ onClose }) => {
             <div className='flex gap-3 mb-2'>
               <div className='w-full'>
                 <label>Full name</label>
-                <div className='flex gap-5 mt-2 frst_nme'><input type="text" placeholder=' Full name' className='outline-none border-1 border-[#E4E7E9] px-3 py-2 w-full rounded' />
+                <div className='flex gap-5 mt-2 frst_nme'>
+                  <input type="text" placeholder=' Full name' className='outline-none border-1 border-[#E4E7E9] px-3 py-2 w-full rounded' />
                 </div>
               </div>
               <div className='w-full'>
                 <label>Phone Number</label>
-                <div className='flex gap-5 mt-2 phne_num'><input type="text" placeholder='Enter 10 digit Phone Number' className='outline-none border-1 border-[#E4E7E9] px-3 py-2 w-full rounded' />
+                <div className='flex gap-5 mt-2 phne_num'>
+                  <input type="text" placeholder='Enter 10 digit Phone Number' className='outline-none border-1 border-[#E4E7E9] px-3 py-2 w-full rounded' />
                 </div>
               </div>
             </div>
             <div className=''>
               <label>Address</label>
-              <div className='flex gap-5 mt-2 adrss'><input type="text" placeholder='Road No. 13/x, House no. 1320/C, Flat No. 5D' className='outline-none border-1 border-[#E4E7E9] px-3 py-2 w-full rounded' />
+              <div className='flex gap-5 mt-2 adrss'>
+                <input type="text" placeholder='Road No. 13/x, House no. 1320/C, Flat No. 5D' className='outline-none border-1 border-[#E4E7E9] px-3 py-2 w-full rounded' />
               </div>
             </div>
             <div className='flex gap-3 ldmrk_adress'>
               <div className='w-8/12'>
                 <label>Landmark</label>
-                <div className='flex gap-5 mt-2'><input type="text" className='outline-none border-1 border-[#E4E7E9] px-3 py-2 text-sm w-full rounded' />
+                <div className='flex gap-5 mt-2'>
+                  <input type="text" className='outline-none border-1 border-[#E4E7E9] px-3 py-2 text-sm w-full rounded' />
                 </div>
               </div>
               <div className='w-4/12 cntry_adress'>

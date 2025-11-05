@@ -360,10 +360,54 @@ input::file-selector-button {
     max-width: 80%;
 }
 
-.view_img{
+.view_img {
     width: 100%;
     max-width: 9%;
 }
+
+.dashbrd_two_hdng select {
+    font-size: 15px;
+}
+
+.edt_profile_form input {
+    padding: 3px 7px;
+    margin-top: 5px;
+}
+
+.edt_profile_form form {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.edt_profile_form form label {
+    font-size: 14px;
+}
+
+.edt_profile_form form input[type="password"] {
+    color: #475156;
+}
+
+.edt_profile_form input:active {
+    outline: none;
+    border: 1px solid #E4E7E9;
+}
+
+.fst_name,
+.lst_name,
+.phne_num,
+.email {
+    width: 50%;
+}
+
+.edt_prfle_cntaner {
+    justify-content: space-between;
+}
+
+.sve_chnges_pssword {
+    font-size: 14px;
+}
+
 @media screen and (max-width: 1600px) {
     .home_box_1 p {
         font-size: 18px;
@@ -632,6 +676,38 @@ input::file-selector-button {
         font-size: 14px;
     }
 
+    .item_lists ul li {
+        font-size: 14px;
+    }
+
+    .vew_prodct span {
+        font-size: 14px;
+    }
+
+    .dwnld_invoice span {
+        font-size: 14px;
+    }
+
+    .view_prdct_show p {
+        font-size: 14px;
+    }
+
+    .replce_refnd button {
+        font-size: 14px;
+    }
+
+    .dashbrd_two_hdng select {
+        font-size: 13px;
+    }
+
+    .edt_profile_form input {
+        font-size: 15px;
+    }
+
+    .edt_profile_form .cntry_adress select {
+        font-size: 15px;
+    }
+
 }
 
 
@@ -864,7 +940,7 @@ input::file-selector-button {
 
     .dashbrd_two_hdng select {
         font-size: 12px;
-        width: 16%;
+        width: 21%;
         padding: 5px 3px;
     }
 
@@ -947,6 +1023,26 @@ input::file-selector-button {
 
     .sve_chnges_pssword {
         font-size: 12px;
+    }
+
+    .item_lists ul li {
+        font-size: 13px;
+    }
+
+    .dwnld_invoice {
+        font-size: 13px;
+    }
+
+    .replce_refnd button {
+        font-size: 12px;
+    }
+
+    .vew_prodct span {
+        font-size: 13px;
+    }
+
+    .edt_profile_form input {
+        font-size: 14px;
     }
 }
 
@@ -1169,6 +1265,25 @@ input::file-selector-button {
         width: 30%;
     }
 
+    .item_lists ul li {
+        font-size: 11px;
+    }
+
+    .vew_prodct span {
+        font-size: 12px;
+    }
+
+    .dwnld_invoice {
+        font-size: 12px;
+    }
+
+    .dashbrd_two_hdng select {
+        font-size: 11px;
+    }
+
+    .edt_prfle_frm {
+        width: 65%;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -1387,6 +1502,10 @@ input::file-selector-button {
     .dshbrd_two_image {
         max-width: 23%;
     }
+
+    .edt_prfle_frm {
+        width: 75%;
+    }
 }
 
 
@@ -1579,6 +1698,15 @@ input::file-selector-button {
     .accunt_dtls_form {
         width: 90%;
     }
+
+    .edt_prfle_cntaner {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .edt_profile_form {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -1753,6 +1881,11 @@ input::file-selector-button {
         width: 18px;
         height: 18px;
     }
+
+    .search_button svg {
+        width: 16px;
+        height: 16px;
+    }
 }
 
 
@@ -1867,6 +2000,10 @@ input::file-selector-button {
 
     .dshbrd_two_image {
         max-width: 23%;
+    }
+
+    .dashbrd_two_cntnt {
+        padding: 5px;
     }
 
 }
@@ -2195,6 +2332,18 @@ input::file-selector-button {
     .dshbrd_two_image {
         max-width: 31%;
     }
+
+    .sve_chnges_pssword {
+        width: 50%;
+    }
+
+    .edt_prfle_frm {
+        width: 80%;
+    }
+
+    .edt_prfle_img {
+        width: 50%;
+    }
 }
 
 
@@ -2294,13 +2443,29 @@ input::file-selector-button {
     }
 
     .sve_chnges_pssword {
-        width: 40%;
         font-size: 11px;
     }
 
     .cty_adress select {
         font-size: 10px !important;
     }
+
+    .view_prdct_show {
+        flex-direction: column;
+    }
+
+    .view_prdct_show {
+        align-items: normal;
+    }
+
+    .replce_refnd {
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+}
+
+.replce_refnd {
+    gap: 2px;
 }
 
 @media screen and (max-width: 425px) {
@@ -2560,6 +2725,10 @@ input::file-selector-button {
 
     .dashbrd_two_lists li {
         font-size: 10px;
+    }
+
+    .cntry_adress {
+        width: 38%;
     }
 }
 

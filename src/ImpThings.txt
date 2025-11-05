@@ -1,11 +1,6 @@
-import React, { useState } from 'react'
-import DashboardOrdersHeading from './DashboardOrdersHeading'
-import { RxTriangleDown, RxTriangleUp } from 'react-icons/rx'
+products and Child products 
 
-const DashboardReturn = () => {
-    const [activeOrder, setActiveOrder] = useState(null)
-
-    const data = [
+const data = [
         {
             order_id: 1,
             shipment_id: 1022353910,
@@ -39,44 +34,8 @@ const DashboardReturn = () => {
                 },
             ]
         },
-        {
-            order_id: 3,
-            shipment_id: 1022353910,
-            status: "Cancelled",
-            total_amount: 300,
-            date: "5 April",
-            products: [
-                {
-                    image: "http://localhost:5173/src/assets/Home/Similar_Products/proteinX_4.png",
-                    amount: 150,
-                    quantity: 2
-                }
-            ]
-        },
-        {
-            order_id: 4,
-            shipment_id: 1022353910,
-            status: "Approved",
-            total_amount: 400,
-            date: "12 March",
-            products: [
-                {
-                    image: "http://localhost:5173/src/assets/Home/Similar_Products/proteinX_1.png",
-                    amount: 200,
-                    quantity: 1
-                },
-                {
-                    image: "http://localhost:5173/src/assets/Home/Similar_Products/proteinX_2.png",
-                    amount: 200,
-                    quantity: 1
-                }
-            ]
-        },
-    ];
+]
 
-    return (
-        <div className='w-9/12 orders_retrn'>
-            <DashboardOrdersHeading />
 
             <div className='flex flex-col gap-4 mt-4 border border-[#D2D2D2] px-4 py-2 rounded'>
                 {data.slice(0, 4).map((item, index) => (
@@ -85,19 +44,10 @@ const DashboardReturn = () => {
                         key={index}
                     >
                         <div className='flex justify-between'>
-                            <div className='item_lists'>
-                                <ul>
-                                    <li>Order ID: {item.order_id}</li>
-                                    <li>Shipment ID: {item.shipment_id}</li>
-                                    <li>Status: {item.status}</li>
-                                    <li>Amount: ₹{item.total_amount}</li>
-                                    <li>Date: {item.date}</li>
-                                </ul>
-                            </div>
-
                             <div className='flex flex-col gap-2'>
                                 <button
-                                    className='border flex justify-center items-center gap-2 px-2 py-1 rounded cursor-pointer vew_prodct'
+                                    className='border flex justify-center items-center gap-2 px-2 py-1 rounded cursor-pointer'
+                                    //Important:-->
                                     onClick={() =>
                                         setActiveOrder(activeOrder === item.order_id ? null : item.order_id)
                                     }
@@ -112,32 +62,25 @@ const DashboardReturn = () => {
                                         </>
                                     )}
                                 </button>
-                                <button className='text-white px-2 py-1 rounded border-[#DB3030] cursor-pointer bg-[#DB3030] dwnld_invoice'>
-                                    Download Invoice
-                                </button>
                             </div>
                         </div>
+
+    //To display Child products::-->
 
                         {activeOrder === item.order_id && (
                             <div className='border-t border-[#D2D2D2] pt-2 mt-2 flex flex-col gap-2'>
                                 {item.products.map((item, index) => (
                                     <div
-                                        className='flex justify-between border items-center view_prdct_show border-[#E5E5E5] p-2 rounded'
+                                        className='flex justify-between items-center border border-[#E5E5E5] p-2 rounded'
                                         key={index}
                                     >
-                                        <div className='flex items-center gap-3 '>
+                                        <div className='flex items-center gap-3'>
                                             <img
                                                 src={item.image}
                                                 alt='product'
                                                 className='w-14 h-14 object-cover rounded'
                                             />
                                             <p>Qty: {item.quantity}</p>
-                                            <p>₹{item.amount * item.quantity}</p>
-                                        </div>
-
-                                        <div className='flex replce_refnd'>
-                                            <button className='border px-2 py-1 rounded cursor-pointer'>Replace</button>
-                                            <button className='border px-2 py-1 rounded cursor-pointer'>Refund</button>
                                         </div>
                                     </div>
                                 ))}
@@ -146,8 +89,3 @@ const DashboardReturn = () => {
                     </div>
                 ))}
             </div>
-        </div>
-    )
-}
-
-export default DashboardReturn

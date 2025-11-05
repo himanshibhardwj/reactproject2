@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 import DashboardReturn from './DashboardReturn'
 import DashboardPassword from './DashboardPassword'
 
-const DashboardRight = ({ isActiveDashboard }) => {
+const DashboardRight = ({ isActiveDashboard, brdcrmName, setBrdcrmName }) => {
     return (
         <>
             {isActiveDashboard === 0 && (
@@ -24,8 +24,8 @@ const DashboardRight = ({ isActiveDashboard }) => {
                             <Link><p className='text-[#525252] email'>Aniket mishra95@gmail.com</p></Link>
                             <Link><p className='text-[#525252] font-medium phone'>8057212546</p></Link>
                         </div>
-                        <div className='w-2/12 dshbrd_btn'>
-                            <Link to={'/'}><button className='border-1 border-[#898989] text-[13px] px-3 py-1 '>Edit Profile</button></Link>
+                        <div className='w-2/12 dshbrd_btn' onClick={()=> setBrdcrmName('Edit Profile')}>
+                            <Link to={'/editprofile'}><button className='border-1 border-[#898989] text-[13px] px-3 py-1 cursor-pointer'>Edit Profile</button></Link>
                         </div>
                     </div>
                     <DashboardRightButton />

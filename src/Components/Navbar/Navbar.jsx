@@ -58,7 +58,7 @@ const Navbar = () => {
                     )
                     }
                   </div>
-                  <div>
+                  <div className='text-[12px] my_account 2xl:text-[14px] xl:text-[13px] md:text-[12px] lg:text-[13px]'>
                     <Link to={'/loginsignup'}>Login/Register</Link>
                   </div>
                   <div className='flex  items-center gap-2 py-3'>
